@@ -1,22 +1,25 @@
 import React from 'react'
 
+import { HeaderContainer, HeaderNavbar, HeaderLogoLeft, HeaderLogoRight, HeaderUL, HeaderLI, HeaderLinks,
+         HeaderNameLeft, HeaderNameRight, HeaderProfession, HeaderProfileInfo } from "../styles/HeaderStyles"
+
 export default function Header() {
   return (
-    <header>
-        <nav>
-          <h2 className="portfolio">Portfó<span>lio</span></h2>
-          <ul>
-            <li><a className="link-menu" href="#home">Home</a></li>
-            <li><a className="link-menu" href="#sobre">Sobre</a></li>
-            <li><a className="link-menu" href="#projetos-id">Projetos</a></li>
-            <li><a className="link-menu" href="#fale-comigo">Fale comigo</a></li>
-          </ul>
-        </nav>
+    <HeaderContainer id="home">
+        <HeaderNavbar>
+          <HeaderLogoLeft>Portfó<HeaderLogoRight>lio</HeaderLogoRight></HeaderLogoLeft>
+          <HeaderUL>
+            <HeaderLI><HeaderLinks href="#home">Home</HeaderLinks></HeaderLI>
+            <HeaderLI><HeaderLinks href="#sobre">Sobre</HeaderLinks></HeaderLI>
+            <HeaderLI><HeaderLinks href="#projetos-id">Projetos</HeaderLinks></HeaderLI>
+            <HeaderLI><HeaderLinks href="#fale-comigo">Fale comigo</HeaderLinks></HeaderLI>
+          </HeaderUL>
+        </HeaderNavbar>
 
-        <div className="meu-nome">
-          <h1>Igor <span>Perdigão</span></h1>
-          <h3>Programador FullStack JR</h3>
-        </div>
-    </header>
+        <HeaderProfileInfo>
+          <HeaderNameLeft>Igor <HeaderNameRight>Perdigão</HeaderNameRight></HeaderNameLeft>
+          <HeaderProfession>Programador FullStack JR</HeaderProfession>
+        </HeaderProfileInfo>
+    </HeaderContainer>
   )
 }

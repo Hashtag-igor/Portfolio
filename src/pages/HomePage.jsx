@@ -3,9 +3,13 @@ import movie from "../assets/movie.png"
 import igor from "../assets/igor.jpeg"
 import goalStore from "../assets/goalStore.png"
 
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+
 export default function HomePage() {
   return (
-    <div>
+    <>
+      <Header />
       <main>
         <section id="sobre">
           <img src={igor} alt="Igor Perdigão" />
@@ -46,6 +50,7 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-    </div>
+      <Footer />
+    </>
   )
 }
