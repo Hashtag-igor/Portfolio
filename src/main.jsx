@@ -4,6 +4,9 @@ import App from './App';
 import GlobalStyle from "./styles/GlobalStyle"
 import HomePage from "./pages/HomePage"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import GoalStore from './pages/GoalStore';
+import MovieStreaming from './pages/MovieStreaming';
+import FinancialSystem from './pages/FinancialSystem';
 
 const routes = [
   {
@@ -13,6 +16,18 @@ const routes = [
       {
         path: "/",                         
         element: <HomePage />,
+      },
+      {
+        path: "/goalstore",                         
+        element: <GoalStore />,
+      },
+      {
+        path: "/moviestreaming",                         
+        element: <MovieStreaming />,
+      },
+      {
+        path: "/financialsystem",                         
+        element: <FinancialSystem />,
       },
     ],
   },

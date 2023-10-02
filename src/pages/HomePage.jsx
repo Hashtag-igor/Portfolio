@@ -1,14 +1,18 @@
+//imagens
 import financialSystem from "../assets/financialSystem.png"
 import movie from "../assets/movie.png"
 import igor from "../assets/igor.jpeg"
 import goalStore from "../assets/goalStore.png"
 
+//components
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
+//styled-components exports
 import { HomeContainer, ProfileInfoButton, ProfileInfoContainer, ProfileInfoDescription, ProfileInfoTitle, ProfileSectionContainer,
          ProfileSectionIMG, ProjectCardContainer, ProjectCardDescription, ProjectCardIMG, ProjectCardName, ProjectCardWrapper,
          ProjectLink, ProjectSectionContainer, ProjectSectionTitle } from "../styles/HomeStyles"
+
 
 export default function HomePage() {
   return (
@@ -35,7 +39,7 @@ export default function HomePage() {
               <ProjectCardDescription>
                 Neste projeto fullstack, utilizei React, Node.js e MongoDB. O backend apresenta uma API personalizada para gerenciar camisas de time, consumida pelo frontend. O MongoDB armazena dados de usuários para registro e login. Usuários autenticados possuem acesso total, enquanto visitantes têm funcionalidades limitadas, como adicionar itens ao carrinho ou acessar áreas restritas.
               </ProjectCardDescription>
-              <ProjectLink href="https://starbucks-rodolfo.netlify.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</ProjectLink>
+              <ProjectLink to="/goalstore">Ver Projeto</ProjectLink>
             </ProjectCardWrapper>
 
             <ProjectCardWrapper>
@@ -44,7 +48,7 @@ export default function HomePage() {
               <ProjectCardDescription>
                 Projeto fullstack de controle finánceiro. <br /><br /><br /> *Ainda em desenvolvimento...
               </ProjectCardDescription>
-              <ProjectLink href="https://cronometro-mpdz.netlify.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</ProjectLink>
+              <ProjectLink to="/financialsystem">Ver Projeto</ProjectLink>
             </ProjectCardWrapper>
 
             <ProjectCardWrapper>
@@ -53,7 +57,7 @@ export default function HomePage() {
               <ProjectCardDescription>
                 Este projeto desenvolvido em React é um serviço de streaming que proporciona aos usuários acesso a um vasto catálogo de filmes e programas de TV, incluindo os títulos mais bem avaliados, populares, próximos e atualmente em exibição. Com a capacidade de pesquisar títulos de todo o mundo, os usuários podem explorar as avaliações críticas, a sinopse e muitos outros detalhes relevantes para tomar decisões informadas sobre o que assistir.
               </ProjectCardDescription>
-              <ProjectLink href="https://peaceful-starlight-02739b.netlify.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</ProjectLink>
+              <ProjectLink to="/moviestreaming">Ver Projeto</ProjectLink>
             </ProjectCardWrapper>
           </ProjectCardContainer>
         </ProjectSectionContainer>

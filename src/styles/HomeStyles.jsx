@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom"
 
 export const HomeContainer = styled.main``
 
@@ -81,7 +82,7 @@ export const ProjectCardDescription = styled.p`
     margin-top: 20px;
     margin-bottom: 40px;
 `
-export const ProjectLink = styled.a`
+export const ProjectLink = styled(Link)`
     background-color: #f9004d;
     color: white;
     padding: 10px 20px;
