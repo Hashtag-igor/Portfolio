@@ -19,7 +19,9 @@ export default function HomePage() {
           <ProfileSectionIMG src={igor} alt="Igor Perdigão" />
           <ProfileInfoContainer>
             <ProfileInfoTitle>Sobre mim</ProfileInfoTitle>
-            <ProfileInfoDescription>Eu sou um Programador Front End, tenho experiência e conhecimento criando aplicações com HTML, CSS, JavaScript, React e Node.</ProfileInfoDescription>
+            <ProfileInfoDescription>
+              Sou um desenvolvedor FullStack Junior altamente motivado e apaixonado por criar experiências digitais envolventes e responsivas. Tenho conhecimento sólido em HTML, CSS, JavaScript, Node.js e React.js, e estou em busca de oportunidades para expandir meu conjunto de habilidades enquanto contribuo para projetos desafiadores.
+            </ProfileInfoDescription>
             <ProfileInfoButton>Entre em contato</ProfileInfoButton>
           </ProfileInfoContainer>
         </ProfileSectionContainer>
@@ -30,24 +32,27 @@ export default function HomePage() {
             <ProjectCardWrapper>
               <ProjectCardIMG src={goalStore} alt="Projeto Goal Store Shirts" />
               <ProjectCardName>Goal Store Shirts</ProjectCardName>
-              <ProjectCardDescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad error harum doloribus labore,
-                odio necessitatibus officia illum rem veritatis possimus aut</ProjectCardDescription>
+              <ProjectCardDescription>
+                Neste projeto fullstack, utilizei React, Node.js e MongoDB. O backend apresenta uma API personalizada para gerenciar camisas de time, consumida pelo frontend. O MongoDB armazena dados de usuários para registro e login. Usuários autenticados possuem acesso total, enquanto visitantes têm funcionalidades limitadas, como adicionar itens ao carrinho ou acessar áreas restritas.
+              </ProjectCardDescription>
               <ProjectLink href="https://starbucks-rodolfo.netlify.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</ProjectLink>
             </ProjectCardWrapper>
 
             <ProjectCardWrapper>
               <ProjectCardIMG src={financialSystem} alt="Projeto de Controle Financeiro" />
               <ProjectCardName>Financial System</ProjectCardName>
-              <ProjectCardDescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad error harum doloribus labore,
-                odio necessitatibus officia illum rem veritatis possimus aut</ProjectCardDescription>
+              <ProjectCardDescription>
+                Projeto fullstack de controle finánceiro. <br /><br /><br /> *Ainda em desenvolvimento...
+              </ProjectCardDescription>
               <ProjectLink href="https://cronometro-mpdz.netlify.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</ProjectLink>
             </ProjectCardWrapper>
 
             <ProjectCardWrapper>
               <ProjectCardIMG src={movie} alt="MovieDB icon" />
               <ProjectCardName>Movie Streaming</ProjectCardName>
-              <ProjectCardDescription>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad error harum doloribus labore,
-                odio necessitatibus officia illum rem veritatis possimus aut</ProjectCardDescription>
+              <ProjectCardDescription>
+                Este projeto desenvolvido em React é um serviço de streaming que proporciona aos usuários acesso a um vasto catálogo de filmes e programas de TV, incluindo os títulos mais bem avaliados, populares, próximos e atualmente em exibição. Com a capacidade de pesquisar títulos de todo o mundo, os usuários podem explorar as avaliações críticas, a sinopse e muitos outros detalhes relevantes para tomar decisões informadas sobre o que assistir.
+              </ProjectCardDescription>
               <ProjectLink href="https://peaceful-starlight-02739b.netlify.app/" target="_blank" rel="noopener noreferrer">Ver Projeto</ProjectLink>
             </ProjectCardWrapper>
           </ProjectCardContainer>

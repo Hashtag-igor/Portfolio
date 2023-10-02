@@ -6,7 +6,7 @@ export const HomeContainer = styled.main``
 export const ProfileSectionContainer = styled.section`
     display: flex;
     align-items: center;
-    padding: 60px 15%;
+    padding: 100px 15%;
     background-color: #000000;
 `
 export const ProfileSectionIMG = styled.img`
@@ -48,8 +48,7 @@ export const ProfileInfoButton = styled.button`
 //PROJECT SECTION
 export const ProjectSectionContainer = styled.section`
     background-color: #191919;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding: 110px 0;
 `
 export const ProjectSectionTitle = styled.h2`
     color: white;
@@ -63,7 +62,7 @@ export const ProjectCardContainer = styled.div`
 `
 export const ProjectCardWrapper = styled.div`
     background-color: #000000;
-    height: 365px;
+    height: 500px;
     width: 335px;
     border-radius: 20px;
     padding: 20px 35px;
@@ -71,6 +70,7 @@ export const ProjectCardWrapper = styled.div`
 `
 export const ProjectCardIMG = styled.img`
     height: 100px;
+    margin: 10px 0;
 `
 export const ProjectCardName = styled.h5`
     color: white;

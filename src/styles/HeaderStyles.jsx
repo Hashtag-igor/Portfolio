@@ -9,7 +9,6 @@ export const HeaderContainer = styled.div`
     background-position: center;
     background-color: #191919;
 `
-
 export const HeaderNavbar = styled.nav`
     display: flex;
     align-items: center;
@@ -18,17 +17,14 @@ export const HeaderNavbar = styled.nav`
     padding-right: 30px;
     padding-top: 25px;
 `
-
 export const HeaderLogoLeft = styled.h2`
     color: #ffffff;
     font-size: 40px;
     font-weight: 500;
 `
-
 export const HeaderLogoRight = styled.span`
     color: #f9004d;
 `
-
 export const HeaderUL = styled.ul``
 
 export const HeaderLI = styled.li`
@@ -43,27 +39,22 @@ export const HeaderLI = styled.li`
         color: #f9004d;
     }
 `
-
 export const HeaderLinks = styled.a`
     text-decoration: none;
     color: white;
 `
-
 export const HeaderProfileInfo = styled.div`
     position: absolute;
     top: 50%;
     left: 7%;
 `
-
 export const HeaderNameLeft = styled.h1`
     color: white;
     font-size: 75px;
 `
-
 export const HeaderNameRight = styled.span`
     color: #f9004d;
 `
-
 export const HeaderProfession = styled.h3`
     color: white;
     font-size: 25px;
