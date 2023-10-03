@@ -6,7 +6,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-}
+    }
+    
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
 `
 
 export default GlobalStyle;

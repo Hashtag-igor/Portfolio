@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { BsLinkedin, BsGithub } from "react-icons/bs"
+import { AiOutlineMail } from "react-icons/ai"
+import { FaPhone } from "react-icons/fa" 
 
 export const FooterContainer = styled.footer`
     background-color: #000;
@@ -7,37 +10,58 @@ export const FooterContainer = styled.footer`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-`
-export const FooterName = styled.h5`
-    color: white;
-    font-size: 30px;
-`
-export const FooterDescription = styled.p`
-    color: white;
-    font-size: 18px;
-    margin-top: 14px;
-    margin-bottom: 30px;
+    color: #fff;
 `
 export const FooterSocialContainer = styled.div`
     display: flex;
-    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
 `
-export const FooterSocialIMG = styled.img`
-    height: 24px;
-    border-radius: 50%;
-`
-export const FooterSocialLink = styled.a`
-    background-color: #f9004d;
-    border-radius: 50%;
+export const FooterSocialWrapper = styled.div`
     display: flex;
-    align-items: center;
+    gap: 20px;
     justify-content: center;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-
-    &:hover {
-        transform: scale(1.3);
-        transition: 0.5s;
-    }
+    flex-direction: column;
+`
+export const FooterTitle = styled.h2`
+    color: #f9004d;
+    margin-bottom: 5px;
+`
+export const LinkedinIcon = styled(BsLinkedin)`
+    color: #4040f7;
+    margin-right: 5px;
+`
+export const MailIcoon = styled(AiOutlineMail)`
+    color: #f9004d;
+    margin-right: 5px;
+    font-size: 20px;
+`
+export const GithubIcon = styled(BsGithub)`
+    color: #fff;
+    margin-right: 5px;
+`
+export const PhoneIcon = styled(FaPhone)`
+    color: #077907;
+    margin-right: 5px;
+`
+export const FooterInfoContainer = styled.div`
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+`
+export const FooterInfoWrapper = styled.div`
+    display: flex;
+`
+export const FooterSocialLinkWrapper = styled.a`
+    display: flex;
+`
+export const FooterLink = styled.h3`
+`
+export const RightsReservedContainer = styled.div`
+    margin-top: 80px;
+`
+export const FooterName = styled.h5`
+    font-size: 18px;
 `

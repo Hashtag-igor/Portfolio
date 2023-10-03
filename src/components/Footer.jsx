@@ -1,25 +1,41 @@
 import React from 'react'
 
-import telefone from "../assets/telefone.png"
-import linkedin from "../assets/linkedin.png"
-
-import { FooterContainer, FooterDescription, FooterName, FooterSocialContainer, FooterSocialIMG, FooterSocialLink } from "../styles/FooterStyles"
+import { FooterContainer, FooterName, FooterSocialContainer, FooterSocialLinkWrapper, GithubIcon, LinkedinIcon, FooterTitle,
+         FooterInfoContainer, FooterSocialWrapper, FooterLink, RightsReservedContainer, MailIcoon, FooterInfoWrapper,
+         PhoneIcon } from "../styles/FooterStyles"
 
 export default function Footer() {
   return (
     <FooterContainer id="fale-comigo">
-      <FooterName>Igor Perdigão</FooterName>
-      <FooterDescription>Para mais informações</FooterDescription>
-
       <FooterSocialContainer>
-        <FooterSocialLink href="https://www.linkedin.com/in/igor-perdigao-silva/" target="_blank" rel="noopener noreferrer">
-          <FooterSocialIMG src={linkedin} alt="LinkedIn" />
-        </FooterSocialLink>
+        <FooterSocialWrapper>
+          <FooterTitle>REDES SOCIAIS</FooterTitle>
+          <FooterSocialLinkWrapper href="https://www.linkedin.com/in/igor-perdigao-silva/" target="_blank" rel="noopener noreferrer">
+            <LinkedinIcon />
+            <FooterLink>Linkedin</FooterLink>
+          </FooterSocialLinkWrapper>
+          <FooterSocialLinkWrapper href="igor_contatos@hotmail.com">
+            <GithubIcon />
+            <FooterLink>Github</FooterLink>
+          </FooterSocialLinkWrapper>
+        </FooterSocialWrapper>
 
-        <FooterSocialLink href="igor_contatos@hotmail.com">
-          <FooterSocialIMG src={telefone} alt="Email" />
-        </FooterSocialLink>
+        <FooterInfoContainer>
+            <FooterTitle>CONTATO</FooterTitle>
+            <FooterInfoWrapper>
+              <PhoneIcon />
+              <FooterLink>WHATSAPP (31) 99802-3935</FooterLink>
+            </FooterInfoWrapper>
+            <FooterInfoWrapper>
+              <MailIcoon />
+              <FooterLink>igor_contatos@hotmail.com</FooterLink>
+            </FooterInfoWrapper>
+        </FooterInfoContainer>
       </FooterSocialContainer>
+
+      <RightsReservedContainer>
+        <FooterName>© 2023 Igor Perdigão. Todos os direitos reservados.</FooterName>
+      </RightsReservedContainer>
     </FooterContainer>
   )
 }
