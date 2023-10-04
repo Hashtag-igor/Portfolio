@@ -11,13 +11,20 @@ import Footer from "../components/Footer"
 //styled-components exports
 import { HomeContainer, ProfileInfoButton, ProfileInfoContainer, ProfileInfoDescription, ProfileInfoTitle, ProfileSectionContainer,
          ProfileSectionIMG, ProjectCardContainer, ProjectCardDescription, ProjectCardIMG, ProjectCardName, ProjectCardWrapper,
-         ProjectLink, ProjectSectionContainer, ProjectSectionTitle } from "../styles/HomeStyles"
+         ProjectLink, ProjectSectionContainer, ProjectSectionTitle, HomeInfoContainer, HomeNameLeft, HomeNameRight, HomeProfession, 
+         HomeProfileInfo, AllProjects, AllProjectsContainer } from "../styles/HomeStyles"
 
 
 export default function HomePage() {
   return (
     <>
       <Header />
+      <HomeInfoContainer>
+        <HomeProfileInfo>
+          <HomeNameLeft>Igor <HomeNameRight>Perdigão</HomeNameRight></HomeNameLeft>
+          <HomeProfession>Programador FullStack JR</HomeProfession>
+        </HomeProfileInfo>
+      </HomeInfoContainer>
       <HomeContainer>
         <ProfileSectionContainer id="sobre">
           <ProfileSectionIMG src={igor} alt="Igor Perdigão" />
@@ -60,6 +67,9 @@ export default function HomePage() {
               <ProjectLink to="/moviestreaming">Ver Projeto</ProjectLink>
             </ProjectCardWrapper>
           </ProjectCardContainer>
+          <AllProjectsContainer>
+            <AllProjects to="https://github.com/Hashtag-igor?tab=repositories" target="_blank">Ver todos os projetos</AllProjects>
+          </AllProjectsContainer>
         </ProjectSectionContainer>
       </HomeContainer>
       <Footer />

@@ -1,13 +1,41 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom"
+import background from "../assets/background.png"
 
 export const HomeContainer = styled.main``
+
+
+export const HomeInfoContainer = styled.div`
+    width: 100%;
+    height: 90vh;
+    background-image: url(${background});
+    background-size: cover;
+    background-position: center;
+    background-color: #191919;
+`
+export const HomeProfileInfo = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 7%; 
+`
+export const HomeNameLeft = styled.h1`
+    color: white;
+    font-size: 75px;
+`
+export const HomeNameRight = styled.span`
+    color: #f9004d;
+`
+export const HomeProfession = styled.h3`
+    color: white;
+    font-size: 25px;
+`
+
 
 //PROFILE SECTION
 export const ProfileSectionContainer = styled.section`
     display: flex;
     align-items: center;
-    padding: 100px 15%;
+    padding: 170px 15%;
     background-color: #000000;
 `
 export const ProfileSectionIMG = styled.img`
@@ -46,10 +74,11 @@ export const ProfileInfoButton = styled.button`
     }
 `
 
+
 //PROJECT SECTION
 export const ProjectSectionContainer = styled.section`
     background-color: #191919;
-    padding: 110px 0;
+    padding: 140px 0;
 `
 export const ProjectSectionTitle = styled.h2`
     color: white;
@@ -95,4 +124,11 @@ export const ProjectLink = styled(Link)`
         background-color: transparent;
         border: 2px solid #f9004d;
     }
+`
+export const AllProjects = styled(Link)`
+    color: white;
+`
+export const AllProjectsContainer = styled.div`
+    text-align: center;
+    margin-top: 50px;
 `

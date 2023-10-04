@@ -1,28 +1,23 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-import background from "../assets/background.png"
+
 
 export const HeaderContainer = styled.div`
-    height: 100vh;
     width: 100%;
-    background-image: url(${background});
-    background-size: cover;
-    background-position: center;
     background-color: #191919;
 `
 export const HeaderNavbar = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 25px;
+    padding: 25px 30px;
 `
-export const HeaderLogoLeft = styled.h2`
+export const HeaderLogoLeft = styled(Link)`
     color: #ffffff;
     font-size: 40px;
     font-weight: 500;
 `
-export const HeaderLogoRight = styled.span`
+export const HeaderLogoRight = styled.a`
     color: #f9004d;
 `
 export const HeaderUL = styled.ul``
@@ -43,19 +38,60 @@ export const HeaderLinks = styled.a`
     text-decoration: none;
     color: white;
 `
-export const HeaderProfileInfo = styled.div`
-    position: absolute;
-    top: 50%;
-    left: 7%;
+
+
+//Header Fixed
+export const HeaderContainerFixed = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  background-color: #191919;
+  height: 80px;
+  z-index: 999;
+  top: 0;
 `
-export const HeaderNameLeft = styled.h1`
-    color: white;
-    font-size: 75px;
+export const HeaderNavbarFixed = styled.nav`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
 `
-export const HeaderNameRight = styled.span`
+export const HeaderLogoLeftFixed = styled(Link)`
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 500;
+`
+export const HeaderLogoRightFixed = styled.a`
     color: #f9004d;
 `
-export const HeaderProfession = styled.h3`
+export const HeaderULFixed = styled.ul`
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 500px;
+`
+export const HeaderLIFixed = styled.li`
     color: white;
-    font-size: 25px;
+    list-style: none;
+    display: inline-block;
+    font-size: 22px;
+    margin-right: 30px;
+    cursor: pointer;
+`
+export const HeaderLinksFixed = styled.a`
+
+`
+export const HeaderProfileInfoFixed = styled.div`
+
+`
+export const HeaderNameLeftFixed = styled.h1`
+
+`
+export const HeaderNameRightFixed = styled.span`
+
+`
+export const HeaderProfessionFixed = styled.h3`
+
 `
