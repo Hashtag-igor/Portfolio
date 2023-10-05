@@ -14,7 +14,7 @@ export default function Footer() {
             <LinkedinIcon />
             <FooterLink>Linkedin</FooterLink>
           </FooterSocialLinkWrapper>
-          <FooterSocialLinkWrapper href="igor_contatos@hotmail.com">
+          <FooterSocialLinkWrapper href="https://github.com/Hashtag-igor" target='_blank' rel="noopener noreferrer">
             <GithubIcon />
             <FooterLink>Github</FooterLink>
           </FooterSocialLinkWrapper>
@@ -24,7 +24,7 @@ export default function Footer() {
             <FooterTitle>CONTATO</FooterTitle>
             <FooterInfoWrapper>
               <PhoneIcon />
-              <FooterLink>WHATSAPP (31) 99802-3935</FooterLink>
+              <FooterLink>whatsapp (31) 99802-3935</FooterLink>
             </FooterInfoWrapper>
             <FooterInfoWrapper>
               <MailIcoon />

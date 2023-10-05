@@ -12,7 +12,7 @@ import Footer from "../components/Footer"
 import { HomeContainer, ProfileInfoButton, ProfileInfoContainer, ProfileInfoDescription, ProfileInfoTitle, ProfileSectionContainer,
          ProfileSectionIMG, ProjectCardContainer, ProjectCardDescription, ProjectCardIMG, ProjectCardName, ProjectCardWrapper,
          ProjectLink, ProjectSectionContainer, ProjectSectionTitle, HomeInfoContainer, HomeNameLeft, HomeNameRight, HomeProfession, 
-         HomeProfileInfo, AllProjects, AllProjectsContainer } from "../styles/HomeStyles"
+         HomeProfileInfo, AllProjects, AllProjectsContainer, Background} from "../styles/HomeStyles"
 
 
 export default function HomePage() {
@@ -24,6 +24,7 @@ export default function HomePage() {
           <HomeNameLeft>Igor <HomeNameRight>Perdigão</HomeNameRight></HomeNameLeft>
           <HomeProfession>Programador FullStack JR</HomeProfession>
         </HomeProfileInfo>
+        <Background />        
       </HomeInfoContainer>
       <HomeContainer>
         <ProfileSectionContainer id="sobre">

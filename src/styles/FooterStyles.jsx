@@ -26,24 +26,24 @@ export const FooterSocialWrapper = styled.div`
 `
 export const FooterTitle = styled.h2`
     color: #f9004d;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 `
 export const LinkedinIcon = styled(BsLinkedin)`
     color: #4040f7;
-    margin-right: 5px;
+    margin-right: 6px;
 `
 export const MailIcoon = styled(AiOutlineMail)`
     color: #f9004d;
-    margin-right: 5px;
+    margin-right: 6px;
     font-size: 20px;
 `
 export const GithubIcon = styled(BsGithub)`
     color: #fff;
-    margin-right: 5px;
+    margin-right: 6px;
 `
 export const PhoneIcon = styled(FaPhone)`
     color: #077907;
-    margin-right: 5px;
+    margin-right: 6px;
 `
 export const FooterInfoContainer = styled.div`
     display: flex;
@@ -63,5 +63,5 @@ export const RightsReservedContainer = styled.div`
     margin-top: 80px;
 `
 export const FooterName = styled.h5`
-    font-size: 18px;
+    font-size: 16px;
 `
