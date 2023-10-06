@@ -12,6 +12,13 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         color: #fff;
     }
+
+    //Para corrigir o problema da página do menu sanduiche aberto
+    @media screen and (max-width: 768px){
+        .pagina-overlay-aberto .pagina-conteudo {
+        transform: translateY(0);
+        }
+    }
 `
 
 export default GlobalStyle;

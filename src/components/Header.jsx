@@ -1,13 +1,20 @@
-import React, {useState, useEffect, useLayoutEffect} from 'react'
+import  {useState, useEffect, useLayoutEffect} from 'react'
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import { HeaderContainer, HeaderLI, HeaderLinks, HeaderLogoLeft, HeaderLogoRight, HeaderUL, HeaderLinksFixed, HeaderNavbarFixed,
-         HeaderLogoLeftFixed, HeaderContainerFixed, HeaderLogoRightFixed, HeaderULFixed, HeaderLIFixed, HeaderNavbar} from "../styles/HeaderStyles"
+         HeaderLogoLeftFixed, HeaderContainerFixed, HeaderLogoRightFixed, HeaderULFixed, HeaderLIFixed, HeaderNavbar,
+         MenuIconMobile, MenuToggleMobile, PaginaConteudoMobileContainer, PaginaConteudoMobileWrapper, PaginaOverlayMobile, NavbarContainer, NavbarWrapper, HeaderLinksMobilePage} from "../styles/HeaderStyles"
     
 
 export default function Header() {
   const [headerState, setHeaderState] = useState('normal');
   const [isMobile, setIsMobile] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [aberto, setAberto] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleLogoClick = () => {
     if (location.pathname === '/') {
@@ -15,9 +22,17 @@ export default function Header() {
     }
   };
 
+  const fecharMenu = () => {
+    setAberto(false);
+  };
+
+  const toggleMenu = () => {
+    setAberto(!aberto);
+  };
+
   useLayoutEffect(() => {
     const checkMobile = () => {
-      const isMobileDevice = window.innerWidth <= 768;
+      const isMobileDevice = window.innerWidth <= 700;
       setIsMobile(isMobileDevice);
     };
 
@@ -81,29 +96,76 @@ export default function Header() {
 
   return (
     <>
-          {headerState === 'fixed' ? (
-            <HeaderContainerFixed>
-              <HeaderNavbarFixed>
-                <HeaderLogoLeftFixed to="/" onClick={handleLogoClick}>Portfó<HeaderLogoRightFixed>lio</HeaderLogoRightFixed></HeaderLogoLeftFixed>
-                <HeaderULFixed>
-                  <HeaderLIFixed><HeaderLinksFixed href="#sobre">Sobre</HeaderLinksFixed></HeaderLIFixed>
-                  <HeaderLIFixed><HeaderLinksFixed href="#projetos-id">Projetos</HeaderLinksFixed></HeaderLIFixed>
-                  <HeaderLIFixed><HeaderLinksFixed href="#fale-comigo">Fale comigo</HeaderLinksFixed></HeaderLIFixed>
-                </HeaderULFixed>
-              </HeaderNavbarFixed>
-            </HeaderContainerFixed>
+      {headerState === 'fixed' ? (
+        <HeaderContainerFixed>
+          <HeaderNavbarFixed>
+            <HeaderLogoLeftFixed to="/" onClick={handleLogoClick}>
+              Portfó<HeaderLogoRightFixed>lio</HeaderLogoRightFixed>
+            </HeaderLogoLeftFixed>
+            <HeaderULFixed>
+              <HeaderLIFixed>
+                <HeaderLinksFixed href="#sobre">Sobre</HeaderLinksFixed>
+              </HeaderLIFixed>
+              <HeaderLIFixed>
+                <HeaderLinksFixed href="#projetos-id">Projetos</HeaderLinksFixed>
+              </HeaderLIFixed>
+              <HeaderLIFixed>
+                <HeaderLinksFixed href="#fale-comigo">Fale comigo</HeaderLinksFixed>
+              </HeaderLIFixed>
+            </HeaderULFixed>
+          </HeaderNavbarFixed>
+        </HeaderContainerFixed>
+      ) : (
+        <HeaderContainer id="home">
+          <HeaderNavbar>
+            <HeaderLogoLeft to="/" onClick={handleLogoClick}>
+              Portfó<HeaderLogoRight>lio</HeaderLogoRight>
+            </HeaderLogoLeft>
+            <HeaderUL>
+              <HeaderLI>
+                <HeaderLinks href="#sobre">Sobre</HeaderLinks>
+              </HeaderLI>
+              <HeaderLI>
+                <HeaderLinks href="#projetos-id">Projetos</HeaderLinks>
+              </HeaderLI>
+              <HeaderLI>
+                <HeaderLinks href="#fale-comigo">Fale comigo</HeaderLinks>
+              </HeaderLI>
+            </HeaderUL>
+          </HeaderNavbar>
+
+          {isMobile && isVisible ? (
+            <PaginaOverlayMobile className={`pagina-overlay ${aberto ? 'pagina-overlay-aberto' : ''}`}>
+              <PaginaConteudoMobileContainer className="pagina-conteudo">
+                <PaginaConteudoMobileWrapper>
+                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
+                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
+                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
+                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
+                </PaginaConteudoMobileWrapper>
+              </PaginaConteudoMobileContainer>
+            </PaginaOverlayMobile>
           ) : (
-            <HeaderContainer id="home">
-              <HeaderNavbar>
-                <HeaderLogoLeft to="/" onClick={handleLogoClick}>Portfó<HeaderLogoRight>lio</HeaderLogoRight></HeaderLogoLeft>
-                <HeaderUL>
-                  <HeaderLI><HeaderLinks href="#sobre">Sobre</HeaderLinks></HeaderLI>
-                  <HeaderLI><HeaderLinks href="#projetos-id">Projetos</HeaderLinks></HeaderLI>
-                  <HeaderLI><HeaderLinks href="#fale-comigo">Fale comigo</HeaderLinks></HeaderLI>
-                </HeaderUL>
-              </HeaderNavbar>
-            </HeaderContainer>
+            <h1 style={{color: "black"}}>teste</h1>
           )}
-      </>
-  )
+
+          {isMobile && isVisible ? 
+              <MenuToggleMobile className="menu-toggle" onClick={toggleMenu}>
+                <MenuIconMobile className={`menu-icon ${aberto ? 'menu-icon-x' : 'menu-icon-vazio'}`} onClick={fecharMenu}></MenuIconMobile> 
+              </MenuToggleMobile> 
+          : 
+            <NavbarContainer>
+              <NavbarWrapper>
+                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
+                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
+                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
+                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
+              </NavbarWrapper>
+            </NavbarContainer>
+            }    
+      </HeaderContainer>
+      )}
+    </>
+  );
+  
 }
