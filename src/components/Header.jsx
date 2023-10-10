@@ -3,7 +3,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 import { HeaderContainer, HeaderLI, HeaderLinks, HeaderLogoLeft, HeaderLogoRight, HeaderUL, HeaderLinksFixed, HeaderNavbarFixed,
          HeaderLogoLeftFixed, HeaderContainerFixed, HeaderLogoRightFixed, HeaderULFixed, HeaderLIFixed, HeaderNavbar,
-         MenuIconMobile, MenuToggleMobile, PaginaConteudoMobileContainer, PaginaConteudoMobileWrapper, PaginaOverlayMobile, NavbarContainer, NavbarWrapper, HeaderLinksMobilePage} from "../styles/HeaderStyles"
+         MenuIconMobile, MenuToggleMobile, PaginaConteudoMobileContainer, PaginaConteudoMobileWrapper, PaginaOverlayMobile, 
+         HeaderLinksMobilePage, PaginaConteudoMobileSubTitle, PaginaConteudoMobileTitle} from "../styles/HeaderStyles"
     
 
 export default function Header() {
@@ -137,31 +138,29 @@ export default function Header() {
           {isMobile && isVisible ? (
             <PaginaOverlayMobile className={`pagina-overlay ${aberto ? 'pagina-overlay-aberto' : ''}`}>
               <PaginaConteudoMobileContainer className="pagina-conteudo">
+                <PaginaConteudoMobileTitle>HOME</PaginaConteudoMobileTitle>
                 <PaginaConteudoMobileWrapper>
-                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
-                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
-                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
-                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
+                  <PaginaConteudoMobileSubTitle>Projetos</PaginaConteudoMobileSubTitle>
+                  <HeaderLinksMobilePage href="#sobre">Goal Store Shirts</HeaderLinksMobilePage>
+                  <HeaderLinksMobilePage href="#sobre">Movie Streaming</HeaderLinksMobilePage>
+                  <HeaderLinksMobilePage href="#sobre">Financial System</HeaderLinksMobilePage>
+                  <HeaderLinksMobilePage href="#sobre">Ver todos</HeaderLinksMobilePage>
+                  <PaginaConteudoMobileSubTitle>Contato</PaginaConteudoMobileSubTitle>
+                  <HeaderLinksMobilePage>Github</HeaderLinksMobilePage>
+                  <HeaderLinksMobilePage>Linkedin</HeaderLinksMobilePage>
                 </PaginaConteudoMobileWrapper>
               </PaginaConteudoMobileContainer>
             </PaginaOverlayMobile>
           ) : (
-            <h1 style={{color: "black"}}>teste</h1>
+            null
           )}
 
           {isMobile && isVisible ? 
               <MenuToggleMobile className="menu-toggle" onClick={toggleMenu}>
                 <MenuIconMobile className={`menu-icon ${aberto ? 'menu-icon-x' : 'menu-icon-vazio'}`} onClick={fecharMenu}></MenuIconMobile> 
               </MenuToggleMobile> 
-          : 
-            <NavbarContainer>
-              <NavbarWrapper>
-                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
-                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
-                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
-                <HeaderLinksMobilePage href="#sobre">Sobre</HeaderLinksMobilePage>
-              </NavbarWrapper>
-            </NavbarContainer>
+          :  
+             null
             }    
       </HeaderContainer>
       )}
