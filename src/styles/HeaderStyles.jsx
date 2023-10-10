@@ -167,7 +167,7 @@ export const PaginaOverlayMobile = styled.div`
 export const PaginaConteudoMobileContainer = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
-    padding: 40px 20px;
+    padding: 40px 40px;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
     z-index: 1;
@@ -175,6 +175,10 @@ export const PaginaConteudoMobileContainer = styled.div`
     &.pagina-overlay-aberto & {
       transform: translateY(0);
     }
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 40px 30px;
   }
 
   @media screen and (max-width: 330px) {
@@ -195,23 +199,36 @@ export const PaginaConteudoMobileWrapper = styled.div`
 
 export const PaginaConteudoMobileTitle = styled(Link)`
   margin-bottom: 30px; 
-  font-size: 38px;
+  font-size: 52px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #191919;
   font-weight: bolder;
 
-  @media screen and (max-width: 374px) {
+  @media screen and (max-width: 500px) {
+    font-size: 44px;
+  }
+
+  @media screen and (max-width: 340px) {
     margin-bottom: 15px;
   }
 `
 
 export const PaginaConteudoMobileSubTitle = styled.h2`
-  font-size: 28px; 
+  font-size: 34px; 
   color: #191919;
-  margin-Top: 10px;
+  margin-Top: 40px;
 
-  @media screen and (max-width: 374px) {
+  @media screen and (max-width: 500px) {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 30px;
+  }
+  
+  @media screen and (max-width: 340px) {
     margin-top: 15px;
+    font-size: 28px;
   }
 `
 
@@ -277,16 +294,27 @@ export const NavbarWrapper = styled.div`
   margin: auto;
 `;
 
-
-export const HeaderLinksMobilePage  = styled.a`
+export const HeaderLinksMobilePage  = styled(Link)`
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 26px;
   margin-left: 20px;
 
   &:hover {
     color: #f9004d;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
   }
 
   @media screen and (max-width: 360px) {

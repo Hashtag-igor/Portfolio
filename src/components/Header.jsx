@@ -141,13 +141,13 @@ export default function Header() {
                 <PaginaConteudoMobileTitle>HOME</PaginaConteudoMobileTitle>
                 <PaginaConteudoMobileWrapper>
                   <PaginaConteudoMobileSubTitle>Projetos</PaginaConteudoMobileSubTitle>
-                  <HeaderLinksMobilePage href="#sobre">Goal Store Shirts</HeaderLinksMobilePage>
-                  <HeaderLinksMobilePage href="#sobre">Movie Streaming</HeaderLinksMobilePage>
-                  <HeaderLinksMobilePage href="#sobre">Financial System</HeaderLinksMobilePage>
-                  <HeaderLinksMobilePage href="#sobre">Ver todos</HeaderLinksMobilePage>
+                  <HeaderLinksMobilePage to="/goalstore">Goal Store Shirts</HeaderLinksMobilePage>
+                  <HeaderLinksMobilePage to="/moviestreaming">Movie Streaming</HeaderLinksMobilePage>
+                  <HeaderLinksMobilePage to="/financialsystem">Financial System</HeaderLinksMobilePage>
+                  <HeaderLinksMobilePage>Ver todos</HeaderLinksMobilePage>
                   <PaginaConteudoMobileSubTitle>Contato</PaginaConteudoMobileSubTitle>
-                  <HeaderLinksMobilePage>Github</HeaderLinksMobilePage>
-                  <HeaderLinksMobilePage>Linkedin</HeaderLinksMobilePage>
+                  <HeaderLinksMobilePage to="https://github.com/Hashtag-igor" target="_blank">Github</HeaderLinksMobilePage>
+                  <HeaderLinksMobilePage to="https://www.linkedin.com/in/igor-perdigao-silva" target="_blank">Linkedin</HeaderLinksMobilePage>
                 </PaginaConteudoMobileWrapper>
               </PaginaConteudoMobileContainer>
             </PaginaOverlayMobile>

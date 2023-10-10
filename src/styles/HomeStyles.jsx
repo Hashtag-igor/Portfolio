@@ -32,6 +32,18 @@ export const HomeInfoContainer = styled.div`
     @media screen and (max-width: 1024px) {
         height: 25vh;
     }
+
+    @media screen and (max-width: 600px) {
+        height: 70vh;
+    }
+
+    @media screen and (max-width: 500px) {
+        height: 60vh;
+    }
+
+    @media screen and (max-width: 380px) {
+        height: 80vh;
+    }
 `
 export const HomeProfileInfo = styled.div`
     position: absolute;
@@ -81,6 +93,7 @@ export const ProfileSectionContainer = styled.section`
 `
 export const ProfileSectionIMG = styled.img`
     height: 400px;
+    width: 400px;
     border-radius: 100%;
     /* border: 2px solid #f9004d; */
     border: 2px solid white;
@@ -88,7 +101,23 @@ export const ProfileSectionIMG = styled.img`
 
     @media screen and (max-width: 1024px) {
         height: 450px;
+        width: 450px;
         margin: 0 auto 60px auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 400px;
+        width: 400px;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 350px;
+        width: 350px;
+    }
+
+    @media screen and (max-width: 400px) {
+        height: 250px;
+        width: 250px;
     }
 `
 export const ProfileInfoContainer = styled.div`
@@ -156,7 +185,7 @@ export const ProjectCardContainer = styled.div`
 `
 export const ProjectCardWrapper = styled.div`
     background-color: #000000;
-    height: 500px;
+    height: 530px;
     width: 335px;
     border-radius: 20px;
     padding: 20px 35px;
@@ -165,7 +194,26 @@ export const ProjectCardWrapper = styled.div`
     @media screen and (max-width: 1024px) {
         width: 90%;
         margin: 15px auto;
-        height: 520px;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 600px;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 680px;
+    }
+
+    @media screen and (max-width: 400px) {
+        height: 750px;
+    }
+
+    @media screen and (max-width: 372px) {
+        height: 800px;
+    }
+
+    @media screen and (max-width: 360px) {
+        height: 870px;
     }
 `
 export const ProjectCardIMG = styled.img`
@@ -229,4 +277,8 @@ export const AllProjects = styled(Link)`
 export const AllProjectsContainer = styled.div`
     text-align: center;
     margin-top: 50px;
+
+    @media screen and (max-width: 600px) {
+        margin-top: 50px;
+    }
 `
