@@ -30,18 +30,18 @@ export const HomeInfoContainer = styled.div`
     background-color: #191919;
 
     @media screen and (max-width: 1024px) {
-        height: 25vh;
-    }
-
-    @media screen and (max-width: 600px) {
-        height: 70vh;
+        height: 30vh;
     }
 
     @media screen and (max-width: 500px) {
-        height: 60vh;
+        height: 86vh;
     }
 
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 400px) {
+        height: 85vh;
+    }
+
+    @media screen and (max-width: 340px) {
         height: 80vh;
     }
 `
@@ -58,10 +58,47 @@ export const HomeProfileInfo = styled.div`
         text-align: center;
         margin: 80px 0;
     }
+
+    @media screen and (max-width: 500px) {
+        margin: 120px 0;
+    }
+
+    @media screen and (max-width: 400px) {
+        margin: 100px auto;
+    }
+
+    @media screen and (max-width: 340px) {
+        width: 95%;
+        margin: 60px auto;
+    }
 `
 export const HomeNameLeft = styled.h1`
     color: white;
     font-size: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px 30px;
+    margin-bottom: 30px;
+
+
+    @media screen and (max-width: 767px) {
+        font-size: 68px;
+    }
+
+    @media screen and (max-width: 500px) {
+        font-size: 75px;
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 420px) {
+        font-size: 72px;
+    }
+
+    @media screen and (max-width: 340px) {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
 `
 export const HomeNameRight = styled.span`
     color: #f9004d;
@@ -69,7 +106,11 @@ export const HomeNameRight = styled.span`
 export const HomeProfession = styled.h3`
     color: white;
     font-size: 25px;
-    margin-top: 10px;
+    margin-top: 15px;
+
+    @media screen and (max-width: 340px) {
+        font-size: 22px;
+    }
 `
 
 
