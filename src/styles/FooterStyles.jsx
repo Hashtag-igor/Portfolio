@@ -54,19 +54,23 @@ export const FooterTitle = styled.h2`
 export const LinkedinIcon = styled(BsLinkedin)`
     color: #4040f7;
     margin-right: 6px;
+    margin-left: 20px;
 `
 export const MailIcoon = styled(AiOutlineMail)`
     color: #f9004d;
     margin-right: 6px;
     font-size: 20px;
+    margin-left: 20px;
 `
 export const GithubIcon = styled(BsGithub)`
     color: #fff;
     margin-right: 6px;
+    margin-left: 20px;
 `
 export const PhoneIcon = styled(FaPhone)`
     color: #077907;
     margin-right: 6px;
+    margin-left: 20px;
 `
 export const FooterInfoContainer = styled.div`
     display: flex;

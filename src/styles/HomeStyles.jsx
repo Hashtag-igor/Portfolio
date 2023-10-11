@@ -128,8 +128,19 @@ export const ProfileSectionContainer = styled.section`
         padding: 180px 0 240px 0;
     }
 
-    @media screen and (max-width: 600px) {
-        width: 100%;
+    @media screen and (max-width: 700px) {
+        width: 90%;
+        margin: auto;
+        padding: 150px 0 220px 0;
+    }
+
+    @media screen and (max-width: 500px) {
+        text-align: center;
+        width: 95%;
+    }
+
+    @media screen and (max-width: 400px) {
+        padding: 120px 0 240px 0;
     }
 `
 export const ProfileSectionIMG = styled.img`
@@ -162,11 +173,23 @@ export const ProfileSectionIMG = styled.img`
     }
 `
 export const ProfileInfoContainer = styled.div`
-    
 `
 export const ProfileInfoTitle = styled.h2`
     color: white;
     font-size: 75px;
+
+    @media screen and (max-width: 500px) {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 66px;
+    }
+
+    @media screen and (max-width: 360px) {
+        font-size: 58px;
+        margin-bottom: 30px;
+    }
 `
 export const ProfileInfoDescription = styled.p`
     color: #e2b9c6;
@@ -174,6 +197,13 @@ export const ProfileInfoDescription = styled.p`
     margin-top: 20px;
     margin-bottom: 60px;
     line-height: 28px;
+
+    @media screen and (max-width: 359px) {
+        text-align: justify;
+        line-height: 30px;
+        width: 95%;
+        margin: 20px auto 60px auto;
+    }
 `
 export const ProfileInfoButton = styled.button`
     color: white;
@@ -196,7 +226,7 @@ export const ProfileInfoButton = styled.button`
 //PROJECT SECTION
 export const ProjectSectionContainer = styled.section`
     background-color: #191919;
-    padding: 160px 0;
+    padding: 120px 0 160px 0;
 `
 export const ProjectSectionTitle = styled.h2`
     color: white;
@@ -204,14 +234,23 @@ export const ProjectSectionTitle = styled.h2`
     text-align: center;
 
     @media screen and (max-width: 700px) {
-        font-size: 60px;
+        font-size: 64px;
     }
 
     @media screen and (max-width: 600px) {
-        font-size: 50px;
+        font-size: 52px;
     }
-    @media screen and (max-width: 600px) {
+
+    @media screen and (max-width: 500px) {
+        font-size: 44px;
+    }
+
+    @media screen and (max-width: 400px) {
         font-size: 40px;
+    }
+
+    @media screen and (max-width: 359px) {
+        font-size: 34px;
     }
 `
 export const ProjectCardContainer = styled.div`
@@ -222,6 +261,10 @@ export const ProjectCardContainer = styled.div`
     @media screen and (max-width: 1024px) {
         flex-direction: column;
         width: 100%;
+    }
+
+    @media screen and (max-width: 400px) {
+        margin-top: 60px;
     }
 `
 export const ProjectCardWrapper = styled.div`
@@ -245,16 +288,21 @@ export const ProjectCardWrapper = styled.div`
         height: 680px;
     }
 
-    @media screen and (max-width: 400px) {
-        height: 750px;
+    @media screen and (max-width: 500px) {
+        height: 760px;
+        width: 95%;
     }
 
-    @media screen and (max-width: 372px) {
+    @media screen and (max-width: 400px) {
         height: 800px;
+        /* width: 100%; */
     }
 
     @media screen and (max-width: 360px) {
-        height: 870px;
+        height: 800px;
+        width: 100%;
+        padding: 30px 0;
+        border-radius: 0;
     }
 `
 export const ProjectCardIMG = styled.img`
@@ -266,10 +314,14 @@ export const ProjectCardIMG = styled.img`
         width: 160px;
         margin: 15px 0;
     }
+
+    @media screen and (max-width: 360px) {
+        margin: 25px 0;
+    }
 `
 export const ProjectCardName = styled.h5`
     color: white;
-    font-size: 26px;
+    font-size: 30px;
 `
 export const ProjectCardDescription = styled.p`
     color: #e2b9c6;
@@ -279,7 +331,13 @@ export const ProjectCardDescription = styled.p`
     @media screen and (max-width: 1024px) {
         line-height: 25px;
         text-align: justify;
-        font-size: 18px;
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 360px) {
+        
+        width: 90%;
+        margin: 30px auto 40px auto;
     }
 `
 export const ProjectLink = styled(Link)`
@@ -312,7 +370,11 @@ export const AllProjects = styled(Link)`
     }
 
     @media screen and (max-width: 1024px) {
-        font-size: 18px;
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 20px;
     }
 `
 export const AllProjectsContainer = styled.div`
