@@ -173,6 +173,13 @@ export const ProfileSectionIMG = styled.img`
     }
 `
 export const ProfileInfoContainer = styled.div`
+    @media screen and (max-width: 600px) {
+        width: 92%;
+    }
+
+    @media screen and (max-width: 359px) {
+        width: 95%;
+    }
 `
 export const ProfileInfoTitle = styled.h2`
     color: white;
@@ -197,6 +204,7 @@ export const ProfileInfoDescription = styled.p`
     margin-top: 20px;
     margin-bottom: 60px;
     line-height: 28px;
+    text-align: justify;
 
     @media screen and (max-width: 359px) {
         text-align: justify;
