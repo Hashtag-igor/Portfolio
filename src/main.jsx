@@ -7,31 +7,47 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import GoalStore from './pages/GoalStore';
 import MovieStreaming from './pages/MovieStreaming';
 import FinancialSystem from './pages/FinancialSystem';
+import HeaderPages from './components/HeaderPages';
 
 const routes = [
   {
     path: "/", 
-    element: <App />,                    
-    children: [                           
+    element: <App />,
+    children: [
       {
-        path: "/",                         
+        path: "/",
         element: <HomePage />,
       },
       {
-        path: "/goalstore",                         
-        element: <GoalStore />,
+        path: "/goalstore",
+        element: (
+          <>
+            <HeaderPages />
+            <GoalStore />
+          </>
+        )
       },
       {
-        path: "/moviestreaming",                         
-        element: <MovieStreaming />,
+        path: "/financialsystem",
+        element: (
+          <>
+            <HeaderPages />
+            <FinancialSystem />
+          </>
+        )
       },
       {
-        path: "/financialsystem",                         
-        element: <FinancialSystem />,
+        path: "/moviestreaming",
+        element: (
+          <>
+            <HeaderPages />
+            <MovieStreaming />
+          </>
+        )
       },
     ],
   },
-]
+];
 
 const router = createBrowserRouter(routes);
 
