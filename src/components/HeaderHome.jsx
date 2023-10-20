@@ -7,7 +7,7 @@ import { HeaderContainer, HeaderLI, HeaderLinks, HeaderLogoLeft, HeaderLogoRight
          HeaderLinksMobilePage, PaginaConteudoMobileSubTitle, PaginaConteudoMobileTitle} from "../styles/HeaderStyles"
     
 
-export default function Header() {
+export default function HeaderHome() {
   const [headerState, setHeaderState] = useState('normal');
   const [isMobile, setIsMobile] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

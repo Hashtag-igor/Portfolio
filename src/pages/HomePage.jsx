@@ -6,6 +6,7 @@ import goalStore from "../assets/goalStore.png"
 
 //components
 import Footer from "../components/Footer"
+import HeaderHome from "../components/HeaderHome"
 
 //styled-components exports
 import { HomeContainer, ProfileInfoButton, ProfileInfoContainer, ProfileInfoDescription, ProfileInfoTitle, ProfileSectionContainer,
@@ -17,6 +18,8 @@ import { HomeContainer, ProfileInfoButton, ProfileInfoContainer, ProfileInfoDesc
 export default function HomePage() {
   return (
     <>
+      <HeaderHome />
+
       <HomeInfoContainer>
         <HomeProfileInfo>
           <HomeNameLeft>Igor <HomeNameRight>Perdigão</HomeNameRight></HomeNameLeft>
