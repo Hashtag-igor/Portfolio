@@ -16,27 +16,30 @@ import mobileImage3 from "../assets/movie/mobile-profile.png"
 export default function MovieStreaming() {
   const MovieStreamingData = {
     title: "Movie Streaming",
+    technologiesUsed: "Tecnologias Utilizadas: React e API (moviedb API: https://www.themoviedb.org/).",
+    dependencies: "Dependências Baixadas: React-Router-Dom, Styled-Components e React-Icons.",
     description: "Este projeto desenvolvido em React é um serviço de streaming que proporciona aos usuários acesso a um vasto catálogo de filmes e programas de TV, incluindo os títulos mais bem avaliados, populares, próximos e atualmente em exibição. Com a capacidade de pesquisar títulos de todo o mundo, os usuários podem explorar as avaliações críticas, a sinopse e muitos outros detalhes relevantes para tomar decisões informadas sobre o que assistir.",
-    link: "testando.com",
+    firstlink: "https://github.com/Hashtag-igor/Movie-Streaming",
+    link: "https://movie-streaming-ivory.vercel.app/",
     carouselsData: [
       {
-        title: "Desktop Version",
+        title: "Desktop Version Images",
         images: [desktopImage1, desktopImage2, desktopImage3]
       },
       {
-        title: "Tablet Version",
+        title: "Tablet Version Images",
         images: [tabletImage1, tabletImage2, tabletImage3]
       },
       {
-        title: "Mobile Version",
+        title: "Mobile Version Images",
         images: [mobileImage1, mobileImage2, mobileImage3]
       },
     ]
   }
 
   return (
-    <div>
+    <>
       <Projects {...MovieStreamingData} carouselsData={MovieStreamingData.carouselsData} />
-    </div>
+    </>
   )
 }
