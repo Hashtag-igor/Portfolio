@@ -1,7 +1,7 @@
 import  { useState, useEffect } from 'react'
 
-import { HeaderContainer, HeaderLogoLeft, HeaderLogoRight, HeaderNavbarFixed, HeaderLogoLeftFixed, HeaderContainerFixed, 
-         HeaderLogoRightFixed, HeaderNavbar } from "../styles/HeaderStyles"
+import { HeaderContainer, HeaderLogoLeft, HeaderLogoRight, HeaderNavbarFixedPages, HeaderLogoLeftFixedPages, HeaderContainerFixed, 
+         HeaderLogoRightFixed, HeaderNavbarPages } from "../styles/HeaderStyles"
 
 export default function HeaderPages() {
   const [headerState, setHeaderState] = useState('normal');
@@ -60,19 +60,19 @@ export default function HeaderPages() {
     <>
       {headerState === 'fixed' ? (
         <HeaderContainerFixed>
-          <HeaderNavbarFixed>
-            <HeaderLogoLeftFixed onClick={handleLogoClick}>
+          <HeaderNavbarFixedPages>
+            <HeaderLogoLeftFixedPages onClick={handleLogoClick}>
               Portfó<HeaderLogoRightFixed>lio</HeaderLogoRightFixed>
-            </HeaderLogoLeftFixed>
-          </HeaderNavbarFixed>
+            </HeaderLogoLeftFixedPages>
+          </HeaderNavbarFixedPages>
         </HeaderContainerFixed>
       ) : (
         <HeaderContainer id="home">
-          <HeaderNavbar>
+          <HeaderNavbarPages>
             <HeaderLogoLeft to="/" onClick={handleLogoClick}>
               Portfó<HeaderLogoRight>lio</HeaderLogoRight>
             </HeaderLogoLeft>
-          </HeaderNavbar>
+          </HeaderNavbarPages>
       </HeaderContainer>
       )}
     </>

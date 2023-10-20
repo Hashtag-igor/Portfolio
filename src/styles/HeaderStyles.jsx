@@ -1,16 +1,69 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+//HeaderPage
+export const HeaderNavbarPages = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px 0 20px 70px;
+
+  @media screen and (max-width: 1300px) {
+    padding: 25px 0 20px 60px;
+  }
+
+  @media screen and (max-width: 1100px) {
+    padding: 25px 0 20px 50px;
+  }
+
+  @media screen and (max-width: 800px) {
+    padding: 25px 30px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 25px 20px;
+  }
+
+  @media screen and (max-width: 380px) {
+    padding: 25px 15px;
+  }
+`
+export const HeaderNavbarFixedPages = styled.nav`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 25px 50px;
+
+  @media screen and (max-width: 800px) {
+    padding: 25px 30px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 25px 20px;
+  }
+
+  @media screen and (max-width: 380px) {
+    padding: 25px 15px;
+  }
+`
+export const HeaderLogoLeftFixedPages = styled(Link)`
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 500;
+`
+
+
 
 export const HeaderContainer = styled.div`
     width: 100%;
     background-color: #191919;
 `
 export const HeaderNavbar = styled.nav`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 30px;
 `
 export const HeaderLogoLeft = styled(Link)`
     color: #ffffff;
