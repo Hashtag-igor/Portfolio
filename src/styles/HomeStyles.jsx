@@ -44,7 +44,13 @@ export const HomeInfoContainer = styled.div`
     @media screen and (max-width: 340px) {
         height: 80vh;
     }
-`
+
+    @media (orientation: landscape) {
+        /* Estilos para dispositivos em orientação deitada */
+        height: 100vh; /* Ajuste a altura conforme necessário */
+    }
+`;
+
 export const HomeProfileInfo = styled.div`
     position: absolute;
     top: 50%;
@@ -70,6 +76,20 @@ export const HomeProfileInfo = styled.div`
     @media screen and (max-width: 340px) {
         width: 95%;
         margin: 60px auto;
+    }
+
+    @media (orientation: landscape) {
+        @media screen and (max-width: 1024px) {
+            margin: 190px 0;
+        }
+
+        @media screen and (max-width: 890px) {
+            margin: 100px 0;
+        }
+
+        @media screen and (max-width: 780px) {
+            margin: 80px 0;
+        }
     }
 `
 export const HomeNameLeft = styled.h1`
@@ -189,7 +209,7 @@ export const ProfileInfoTitle = styled.h2`
         text-align: center;
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 420px) {
         font-size: 66px;
     }
 

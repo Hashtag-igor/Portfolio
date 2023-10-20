@@ -21,11 +21,11 @@ export const HeaderNavbarPages = styled.nav`
   }
 
   @media screen and (max-width: 500px) {
-    padding: 25px 20px;
+    padding: 25px 20px 20px 20px;
   }
 
   @media screen and (max-width: 380px) {
-    padding: 25px 15px;
+    padding: 25px 15px 20px 15px;
   }
 `
 export const HeaderNavbarFixedPages = styled.nav`
@@ -40,11 +40,11 @@ export const HeaderNavbarFixedPages = styled.nav`
   }
 
   @media screen and (max-width: 500px) {
-    padding: 25px 20px;
+    padding: 25px 20px 20px 20px;
   }
 
   @media screen and (max-width: 380px) {
-    padding: 25px 15px;
+    padding: 25px 15px 20px 15px;
   }
 `
 export const HeaderLogoLeftFixedPages = styled(Link)`
