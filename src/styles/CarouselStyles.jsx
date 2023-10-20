@@ -18,6 +18,7 @@ export const CarouselWrapper = styled.div`
 `
 export const CarouselIMG = styled.img`
   min-width: 22%;
+  margin-bottom: 60px;
   
   @media screen and (max-width: 1024px) {
     max-width: 95%;
