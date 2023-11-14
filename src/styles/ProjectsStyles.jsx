@@ -77,3 +77,81 @@ export const ProjectsMapImagesTitle = styled.h2`
         font-size: 24px;
     }
 `
+export const ProjectTitle = styled.h1`
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 420px) {
+        font-size: 35px;
+    }
+`
+export const ProjectIMG = styled.img`
+    height: 120px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    @media screen and (max-width: 1024px) {
+        height: 120px;
+        width: 140px;
+    }
+
+    @media screen and (max-width: 360px) {
+        /* margin: 25px 0; */
+    }
+`
+
+
+//AllProjects Styles
+export const AllProjectsContainer = styled.div`
+    background: #191919; 
+    width: 100%;
+`
+export const AllProjectsWrapper = styled.div`
+    width: 90%;
+    margin: auto;
+`
+export const AllProjectsMapContainer = styled.div`
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 60px 0 140px 0; 
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 400px) {
+        margin-top: 60px;
+    }
+`
+export const ProjectSectionTitle = styled.h2`
+    color: white;
+    font-size: 75px;
+    text-align: center;
+    padding-top: 30px;
+
+    @media screen and (max-width: 700px) {
+        font-size: 64px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 52px;
+    }
+
+    @media screen and (max-width: 500px) {
+        font-size: 44px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 359px) {
+        font-size: 34px;
+    }
+`

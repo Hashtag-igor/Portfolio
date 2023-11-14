@@ -1,17 +1,18 @@
-import Carousel from './Carousel'
+import Carousel from '../components/Carousel'
 import PropTypes from 'prop-types';
-import Footer from './Footer';
+import Footer from '../components/Footer';
 
 import { LinksProjectsContainer, LinksProjectsTitle, ProjectsContainer, ProjectsInfoContainer, ProjectsInfoDependencies, ProjectsInfoDescription,
          ProjectsInfoTitle, ProjectsMapImagesContainer, ProjectsMapImagesTitle, ProjectsMapImagesWrapper, ProjectsParagraph,
-         ProjectsRepoContainer, ProjectsRepoTitle, ProjectsTitle, ProjectsWrapper } from "../styles/ProjectsStyles"
+         ProjectsRepoContainer, ProjectsRepoTitle, ProjectTitle, ProjectsWrapper, ProjectIMG} from "../styles/ProjectsStyles"
 
-export default function Projects({ title, description, link, carouselsData, firstlink, secondlink, technologiesUsed, dependencies }) {
+export default function Projects({ title, img, description, link, carouselsData, firstlink, secondlink, technologiesUsed, dependencies }) {
   return (
     <>
       <ProjectsContainer>
         <ProjectsWrapper>
-          <ProjectsTitle>{title}</ProjectsTitle>
+          <ProjectTitle>{title}</ProjectTitle>
+          <ProjectIMG src={img}/>
           <ProjectsInfoContainer>
             <ProjectsInfoTitle>Sobre</ProjectsInfoTitle>
             <ProjectsInfoDescription>{technologiesUsed}</ProjectsInfoDescription>

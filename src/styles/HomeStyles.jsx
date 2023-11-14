@@ -296,12 +296,14 @@ export const ProjectCardContainer = styled.div`
     }
 `
 export const ProjectCardWrapper = styled.div`
-    background-color: #000000;
+    /* background-color: #000000; */
+    background-color: white;
     height: 530px;
     width: 335px;
     border-radius: 20px;
     padding: 20px 35px;
     text-align: center;
+    margin: 0 0 80px 0;
 
     @media screen and (max-width: 1024px) {
         width: 90%;
@@ -330,7 +332,6 @@ export const ProjectCardWrapper = styled.div`
         height: 800px;
         width: 100%;
         padding: 30px 0;
-        border-radius: 0;
     }
 `
 export const ProjectCardIMG = styled.img`
@@ -348,13 +349,14 @@ export const ProjectCardIMG = styled.img`
     }
 `
 export const ProjectCardName = styled.h5`
-    color: white;
+    /* color: white; */
     font-size: 30px;
 `
 export const ProjectCardDescription = styled.p`
-    color: #e2b9c6;
+    /* color: #e2b9c6; */
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    text-align: justify;
 
     @media screen and (max-width: 1024px) {
         line-height: 25px;
@@ -363,7 +365,6 @@ export const ProjectCardDescription = styled.p`
     }
 
     @media screen and (max-width: 360px) {
-        
         width: 90%;
         margin: 30px auto 40px auto;
     }
@@ -380,6 +381,7 @@ export const ProjectLink = styled(Link)`
     &:hover {
         background-color: transparent;
         border: 2px solid #f9004d;
+        color: #f9004d;
     }
 
     @media screen and (max-width: 1024px) {
