@@ -8,6 +8,8 @@ import GoalStore from './pages/GoalStore';
 import MovieStreaming from './pages/MovieStreaming';
 import FinancialSystem from './pages/FinancialSystem';
 import HeaderPages from './components/HeaderPages';
+import AllProjects from './pages/AllProjects';
+import Pokedex from './pages/Pokedex';
 
 const routes = [
   {
@@ -45,6 +47,24 @@ const routes = [
           </>
         )
       },
+      {
+        path: "/pokedex",
+        element: (
+          <>
+            <HeaderPages />
+            <Pokedex />
+          </>
+        )
+      },
+      {
+        path: "/allprojects",
+        element: (
+          <>
+            <HeaderPages />
+            <AllProjects />
+          </>
+        )
+      }
     ],
   },
 ];
