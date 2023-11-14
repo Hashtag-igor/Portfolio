@@ -37,7 +37,7 @@ export const CarouselRightButton = styled(BsFillArrowRightCircleFill)`
   color: #191919;
   border: none;
   font-size: 30px;
-  ${(props) => (props.direction === 'next' ? 'right: 10px;' : 'left: 10px;')}
+  ${(props) => (props.direction === 'next' ? 'right: 2px;' : 'left: 2px;')}
 
   &:hover{
     cursor: pointer;
@@ -51,7 +51,7 @@ export const CarouselLeftButton = styled(BsFillArrowLeftCircleFill)`
   color: #191919;
   border: none;
   font-size: 30px;
-  ${(props) => (props.direction === 'next' ? 'right: 10px;' : 'left: 10px;')}
+  ${(props) => (props.direction === 'next' ? 'right: 2px;' : 'left: 2px;')}
 
   &:hover{
     cursor: pointer;

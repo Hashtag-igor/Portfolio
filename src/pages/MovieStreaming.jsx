@@ -1,4 +1,6 @@
-import Projects from '../components/Projects'
+import Projects from './Projects'
+
+import movie from "../assets/movie.png"
 
 import desktopImage1 from "../assets/movie/desktop-home.png"
 import desktopImage2 from "../assets/movie/desktop-search.png"
@@ -16,6 +18,7 @@ import mobileImage3 from "../assets/movie/mobile-profile.png"
 export default function MovieStreaming() {
   const MovieStreamingData = {
     title: "Movie Streaming",
+    img: movie,
     technologiesUsed: "Tecnologias Utilizadas: React e API (moviedb API: https://www.themoviedb.org/).",
     dependencies: "Dependências Baixadas: React-Router-Dom, Styled-Components e React-Icons.",
     description: "Este projeto desenvolvido em React é um serviço de streaming que proporciona aos usuários acesso a um vasto catálogo de filmes e programas de TV, incluindo os títulos mais bem avaliados, populares, próximos e atualmente em exibição. Com a capacidade de pesquisar títulos de todo o mundo, os usuários podem explorar as avaliações críticas, a sinopse e muitos outros detalhes relevantes para tomar decisões informadas sobre o que assistir.",
