@@ -1,6 +1,6 @@
 import Card from '../components/Card';
 import Footer from '../components/Footer';
-import projectsData from '../components/ProjectsData';
+import projectsData from "../components/projectsData"; 
 
 import { AllProjectsMapContainer, ProjectSectionTitle, AllProjectsContainer, AllProjectsWrapper } from '../styles/ProjectsStyles';
 
