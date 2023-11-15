@@ -5,7 +5,7 @@ import igor from "../assets/igor.jpeg"
 import Footer from "../components/Footer"
 import HeaderHome from "../components/HeaderHome"
 import Card from "../components/Card"
-import projectsData from '../components/projectsData';
+import projectsData from '../components/ProjectsData';
 
 //styled-components exports
 import { HomeContainer, ProfileInfoButton, ProfileInfoContainer, ProfileInfoDescription, ProfileInfoTitle, ProfileSectionContainer,
