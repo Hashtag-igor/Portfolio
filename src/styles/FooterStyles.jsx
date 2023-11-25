@@ -4,13 +4,12 @@ import { AiOutlineMail } from "react-icons/ai"
 import { FaPhone } from "react-icons/fa" 
 
 export const FooterContainer = styled.footer`
-    background-color: #000;
+    background: #FAF6F0;
     padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
 `
 export const FooterSocialContainer = styled.div`
     display: flex;
@@ -101,6 +100,7 @@ export const RightsReservedContainer = styled.div`
 export const FooterName = styled.h5`
     font-size: 16px;
     text-align: center;
+    color: rgb(0, 0, 0);
 
     @media screen and (max-width: 400px) {
         font-size: 14px;
