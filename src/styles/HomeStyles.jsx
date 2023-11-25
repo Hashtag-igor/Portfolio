@@ -2,13 +2,18 @@ import styled from "styled-components";
 import { Link } from "react-router-dom"
 import background from "../assets/background.png"
 
-export const HomeContainer = styled.main`
-    background-color: #000000;
+export const Container = styled.main`
     width: 100%;
 
     @media screen and (max-width: 600px) {
         font-size: 40px;
     }
+`
+export const ProfileFirstContainer = styled.div`
+    background-color: #fff;
+`
+export const ProfileSecondContainer = styled.div`
+    background-color: #FAF6F0;
 `
 
 export const Background = styled.div`
@@ -135,6 +140,34 @@ export const HomeProfession = styled.h3`
 
 
 //PROFILE SECTION
+export const ProfileHeaderSectionContainer = styled.section`
+    display: flex;
+    align-items: center;
+    /* padding: 170px 15%; */
+    width: 80%;
+    padding: 130px 0;
+    margin: auto;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        padding: 180px 0 240px 0;
+    }
+
+    @media screen and (max-width: 700px) {
+        width: 90%;
+        margin: auto;
+        padding: 150px 0 220px 0;
+    }
+
+    @media screen and (max-width: 500px) {
+        text-align: center;
+        width: 95%;
+    }
+
+    @media screen and (max-width: 400px) {
+        padding: 120px 0 240px 0;
+    }
+`
 export const ProfileSectionContainer = styled.section`
     display: flex;
     align-items: center;
@@ -168,8 +201,12 @@ export const ProfileSectionIMG = styled.img`
     width: 400px;
     border-radius: 100%;
     /* border: 2px solid #f9004d; */
-    border: 2px solid white;
+    border: 3px solid white;
     margin-right: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.459), 0 6px 20px rgba(0, 0, 0, 0.15);
+
+
+
 
     @media screen and (max-width: 1024px) {
         height: 450px;
@@ -202,7 +239,7 @@ export const ProfileInfoContainer = styled.div`
     }
 `
 export const ProfileInfoTitle = styled.h2`
-    color: white;
+    color: #000000;
     font-size: 75px;
 
     @media screen and (max-width: 500px) {
@@ -219,7 +256,7 @@ export const ProfileInfoTitle = styled.h2`
     }
 `
 export const ProfileInfoDescription = styled.p`
-    color: #e2b9c6;
+    color: #000000;
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 60px;
@@ -233,18 +270,18 @@ export const ProfileInfoDescription = styled.p`
         margin: 20px auto 60px auto;
     }
 `
-export const ProfileInfoButton = styled.button`
+export const ProfileInfoButton = styled.a`
     color: white;
     background: #f9004d;
-    height: 50px;
-    width: 200px;
+    padding: 15px 25px;
     font-size: 20px;
     border: none;
     border-radius: 26px;
     cursor: pointer;
 
     &:hover {
-        background-color: black;
+        background-color: #ffffff;
+        color: #f9004d;
         border: 3px solid #f9004d;
         transition: 0.5s;
     }

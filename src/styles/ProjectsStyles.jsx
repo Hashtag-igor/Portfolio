@@ -3,7 +3,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom"
 
 export const ProjectsContainer = styled.div`
-    margin: 30px 0 100px 0;
+    margin:  0 0 0 0;
+    background-color: #FAF6F0;
+    padding: 40px 0 80px 0;
 `
 export const ProjectsWrapper = styled.div`
     width: 90%;
