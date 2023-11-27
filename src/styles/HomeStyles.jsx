@@ -128,15 +128,115 @@ export const HomeNameLeft = styled.h1`
 export const HomeNameRight = styled.span`
     color: #f9004d;
 `
+export const HomeProfessionContainer = styled.div`
+    overflow: hidden; 
+    white-space: nowrap; 
+    font-size: 2em;
+
+    @media screen and (max-width: 1024px){ width: 54%; margin: auto; }
+
+    @media screen and (max-width: 1000px){ width: 55%; }
+
+    @media screen and (max-width: 970px){ width: 57%; } 
+
+    @media screen and (max-width: 930px){ width: 59%; }
+
+    @media screen and (max-width: 900px){ width: 61%; }
+
+    @media screen and (max-width: 870px){ width: 63%; }
+
+    @media screen and (max-width: 840px){ width: 66%; }
+
+    @media screen and (max-width: 810px){ width: 68%; }
+
+    @media screen and (max-width: 780px){ width: 70%; }
+    
+    @media screen and (max-width: 760px){ width: 72%; }
+
+    @media screen and (max-width: 740px){ width: 74%; }
+
+    @media screen and (max-width: 720px){ width: 76%; }
+
+    @media screen and (max-width: 700px){ width: 63%; }
+
+    @media screen and (max-width: 680px){ width: 65%; }
+
+    @media screen and (max-width: 660px){ width: 67%; }
+
+    @media screen and (max-width: 640px){ width: 69%; }
+
+    @media screen and (max-width: 620px){ width: 71%; }
+
+    @media screen and (max-width: 600px){ width: 74%; }
+
+    @media screen and (max-width: 580px){ width: 76%; }
+
+    @media screen and (max-width: 560px){ width: 78%; }
+
+    @media screen and (max-width: 550px){ width: 79%; }
+
+    @media screen and (max-width: 530px){ width: 82%; }
+
+    @media screen and (max-width: 520px){ width: 84%; }
+
+    @media screen and (max-width: 510px){ width: 85%; }
+
+    @media screen and (max-width: 500px){ width: 88%; }
+
+    @media screen and (max-width: 485px){ width: 90%; }
+
+    @media screen and (max-width: 477px){ width: 92%; }
+
+    @media screen and (max-width: 465px){ width: 94%; }
+
+    @media screen and (max-width: 455px){ width: 96%; }
+
+    @media screen and (max-width: 445px){ width: 85%; }
+
+    @media screen and (max-width: 435px){ width: 88%; }
+
+    @media screen and (max-width: 420px){ width: 90%; }
+
+    @media screen and (max-width: 410px){ width: 86%; }
+
+    @media screen and (max-width: 400px){ width: 90%; }
+
+    @media screen and (max-width: 380px){ width: 86%; }
+
+    @media screen and (max-width: 365px){ width: 90%;}
+
+    @media screen and (max-width: 350px){ width: 84%; }
+
+    @media screen and (max-width: 340px){ width: 90%; }
+
+    @media screen and (max-width: 335px){ width: 94%; }
+`
+
 export const HomeProfession = styled.h3`
     color: white;
-    font-size: 25px;
-    margin-top: 15px;
+    margin-top: 2px;
+    overflow: hidden;
+    display: inline-block;
+    border-right: .15em solid orange;
+    position: relative;
+    animation: typing-erasing 8s steps(30, end) infinite;
 
-    @media screen and (max-width: 340px) {
-        font-size: 22px;
+    @keyframes typing-erasing {
+        0%, 100% { width: 0; }
+        25%, 75% { width: 100%; }
+        50% { width: 100%; }
     }
-`
+
+    @media screen and (max-width: 700px){ font-size: 30px; }
+
+    @media screen and (max-width: 445px){ font-size: 26px; }
+
+    @media screen and (max-width: 410px){ font-size: 24px; }
+
+    @media screen and (max-width: 380px){ font-size: 22px; }
+
+    @media screen and (max-width: 350px){ font-size: 20px; }
+`;
 
 
 //PROFILE SECTION

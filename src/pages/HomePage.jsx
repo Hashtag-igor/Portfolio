@@ -1,5 +1,8 @@
 //imagens
 import igor from "../assets/igor.jpeg"
+import notbook from "../assets/notebook.png"
+import colors from "../assets/colors.png"
+import files from "../assets/files.png"
 
 //components
 import Footer from "../components/Footer"
@@ -11,7 +14,7 @@ import projectsData from '../components/ProjectsData';
 import { Container, ProfileInfoButton, ProfileInfoContainer, ProfileInfoDescription, ProfileInfoTitle, ProfileSectionContainer,
          ProfileSectionIMG, ProjectCardContainer, ProjectSectionContainer, ProjectSectionTitle, HomeInfoContainer, HomeNameLeft, HomeNameRight, HomeProfession, 
          HomeProfileInfo, AllProjects, AllProjectsContainer, Background, ProfileHeaderSectionContainer, ProfileFirstContainer,
-         ProfileSecondContainer} from "../styles/HomeStyles"
+         ProfileSecondContainer, HomeProfessionContainer} from "../styles/HomeStyles"
 
 
 export default function HomePage() {
@@ -22,7 +25,9 @@ export default function HomePage() {
       <HomeInfoContainer>
         <HomeProfileInfo>
           <HomeNameLeft>Igor <HomeNameRight>Perdigão</HomeNameRight></HomeNameLeft>
-          <HomeProfession>Programador FullStack JR</HomeProfession>
+          <HomeProfessionContainer>
+            <HomeProfession>Desenvolvedor Frontend Junior</HomeProfession>
+          </HomeProfessionContainer>
         </HomeProfileInfo>
         <Background />        
       </HomeInfoContainer>
@@ -50,18 +55,24 @@ export default function HomePage() {
               <h2>Meu Conjunto de Habilidades</h2>
             </div>
             <div style={{display: "flex", alignItems: "center", justifyContent: "space-evenly", border: "1px solid red", margin: "40px 0", textAlign: "center"}}>
-              <div style={{width: "25%"}}>
-                <span>ICONE</span>
+              <div style={{width: "25%", display: "flex", flexDirection: 'column', gap: "5px 0"}}>
+                <div>
+                  <img style={{marginBottom: '15px', width: "42px", height: "42px"}} src={notbook} alt="" />
+                </div>
                 <h4>Desenvolvimento Web</h4>
                 <p>Ampla experiência em desenvolvimento frontend, com ênfase em tecnologias de ponta.</p>
               </div>
-              <div style={{width: "25%"}}>
-                <span>ICONE</span>
+              <div style={{width: "25%", display: "flex", flexDirection: 'column', gap: "5px 0"}}>
+                <div>
+                  <img style={{marginBottom: "15px", width: "42px", height: "42px"}} src={colors} alt="" />
+                </div>
                 <h4>Web Design</h4>
                 <p>Habilidade em criar layouts modernos e responsivos, com foco na experiência do usuário.</p>
               </div>
-              <div style={{width: "25%"}}>
-                <span>ICONE</span>
+              <div style={{width: "25%", display: "flex", flexDirection: 'column', gap: "5px 0"}}>
+                <div>
+                  <img style={{marginBottom: "15px", width: "42px", height: "42px"}} src={files} alt="" />
+                </div>
                 <h4>Gerenciamentos de versões</h4>
                 <p>Experiência em ferramentas de gerenciamento de versão para controle de projetos.</p>
               </div>
