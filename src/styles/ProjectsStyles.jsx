@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom"
 
 export const ProjectsContainer = styled.div`
-    margin:  0 0 0 0;
+    margin:  0;
     background-color: #FAF6F0;
     padding: 40px 0 80px 0;
 `
@@ -13,7 +13,7 @@ export const ProjectsWrapper = styled.div`
 `
 export const ProjectsTitle = styled.h1`
     text-align: center;
-    font-size: 40px;
+    font-size: 10px;
     margin-bottom: 50px;
 
     @media screen and (max-width: 420px) {
@@ -81,8 +81,7 @@ export const ProjectsMapImagesTitle = styled.h2`
 `
 export const ProjectTitle = styled.h1`
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 70px;
 
     @media screen and (max-width: 420px) {
         font-size: 35px;
@@ -133,7 +132,7 @@ export const AllProjectsMapContainer = styled.div`
 `
 export const ProjectSectionTitle = styled.h2`
     color: white;
-    font-size: 75px;
+    font-size: 70px;
     text-align: center;
     padding-top: 30px;
 
