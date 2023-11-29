@@ -11,10 +11,11 @@ import Card from "../components/Card"
 import projectsData from '../components/ProjectsData';
 
 //styled-components exports
-import { Container, ProfileInfoButton, ProfileInfoContainer, ProfileInfoDescription, ProfileInfoTitle, ProfileSectionContainer,
+import { Container, ProfileInfoButton, ProfileInfoContainer, ProfileInfoDescription, ProfileInfoTitle, HabilitiesHeaderDescription,
          ProfileSectionIMG, ProjectCardContainer, ProjectSectionContainer, ProjectSectionTitle, HomeInfoContainer, HomeNameLeft, HomeNameRight, HomeProfession, 
          HomeProfileInfo, AllProjects, AllProjectsContainer, Background, ProfileHeaderSectionContainer, ProfileFirstContainer,
-         ProfileSecondContainer, HomeProfessionContainer} from "../styles/HomeStyles"
+         ProfileSecondContainer, HomeProfessionContainer, ProfileSecondWrapper, HabilitiesHeader, HabilitiesTitle, HabilitiesContainer, HabilitiesWrapper,
+         HabilitiesImageContainer, HabilitiesImage, HabilitiesName, HabilitiesDescription } from "../styles/HomeStyles"
 
 
 export default function HomePage() {
@@ -26,6 +27,7 @@ export default function HomePage() {
         <HomeProfileInfo>
           <HomeNameLeft>Igor <HomeNameRight>Perdigão</HomeNameRight></HomeNameLeft>
           <HomeProfessionContainer>
+            
             <HomeProfession>Desenvolvedor Frontend Junior</HomeProfession>
           </HomeProfessionContainer>
         </HomeProfileInfo>
@@ -43,41 +45,41 @@ export default function HomePage() {
                 Minha jornada no desenvolvimento web é marcada por uma busca constante por desafios, aprendizado e evolução. <br /><br />
                 Estou ansioso para continuar crescendo profissionalmente e colaborar em projetos que inspirem e atendam às necessidades dos usuários.
               </ProfileInfoDescription>
-              <ProfileInfoButton>Entre em contato</ProfileInfoButton>
+              <ProfileInfoButton to="https://api.whatsapp.com/send/?phone=5531998023935&text&type=phone_number&app_absent=0" target="_blank">Entre em contato</ProfileInfoButton>
             </ProfileInfoContainer>
           </ProfileHeaderSectionContainer>
         </ProfileFirstContainer>
 
-        {/* //HABILIDADES */}
-        <ProfileSecondContainer>
-          <div style={{width: "100%", padding: "90px 0"}}>
-            <div style={{textAlign: "center"}}>
-              <h2>Meu Conjunto de Habilidades</h2>
-            </div>
-            <div style={{display: "flex", alignItems: "center", justifyContent: "space-evenly", border: "1px solid red", margin: "40px 0", textAlign: "center"}}>
-              <div style={{width: "25%", display: "flex", flexDirection: 'column', gap: "5px 0"}}>
-                <div>
-                  <img style={{marginBottom: '15px', width: "42px", height: "42px"}} src={notbook} alt="" />
-                </div>
-                <h4>Desenvolvimento Web</h4>
-                <p>Ampla experiência em desenvolvimento frontend, com ênfase em tecnologias de ponta.</p>
-              </div>
-              <div style={{width: "25%", display: "flex", flexDirection: 'column', gap: "5px 0"}}>
-                <div>
-                  <img style={{marginBottom: "15px", width: "42px", height: "42px"}} src={colors} alt="" />
-                </div>
-                <h4>Web Design</h4>
-                <p>Habilidade em criar layouts modernos e responsivos, com foco na experiência do usuário.</p>
-              </div>
-              <div style={{width: "25%", display: "flex", flexDirection: 'column', gap: "5px 0"}}>
-                <div>
-                  <img style={{marginBottom: "15px", width: "42px", height: "42px"}} src={files} alt="" />
-                </div>
-                <h4>Gerenciamentos de versões</h4>
-                <p>Experiência em ferramentas de gerenciamento de versão para controle de projetos.</p>
-              </div>
-            </div>
-          </div>
+        <ProfileSecondContainer >
+          <ProfileSecondWrapper id="habilidades">
+            <HabilitiesHeader>
+              <HabilitiesTitle>Meu Conjunto de Habilidades</HabilitiesTitle>
+              <HabilitiesHeaderDescription>Conheça as capacidades e ferramentas que integro, habilitando-me a conceber soluções inovadoras e eficazes para satisfazer as demandas dos projetos e clientes.</HabilitiesHeaderDescription>
+            </HabilitiesHeader>
+            <HabilitiesContainer>
+              <HabilitiesWrapper>
+                <HabilitiesImageContainer>
+                  <HabilitiesImage src={notbook} alt="" />
+                </HabilitiesImageContainer>
+                <HabilitiesName>Desenvolvimento Web</HabilitiesName>
+                <HabilitiesDescription>Ampla experiência em desenvolvimento frontend, com ênfase em tecnologias de ponta.</HabilitiesDescription>
+              </HabilitiesWrapper>
+              <HabilitiesWrapper>
+                <HabilitiesImageContainer>
+                  <HabilitiesImage src={colors} alt="" />
+                </HabilitiesImageContainer>
+                <HabilitiesName>Web Design</HabilitiesName>
+                <HabilitiesDescription>Habilidade em criar layouts modernos e responsivos, com foco na experiência do usuário.</HabilitiesDescription>
+              </HabilitiesWrapper>
+              <HabilitiesWrapper>
+                <HabilitiesImageContainer>
+                  <HabilitiesImage src={files} alt="" />
+                </HabilitiesImageContainer>
+                <HabilitiesName>Gerenciamentos de versões</HabilitiesName>
+                <HabilitiesDescription>Experiência em ferramentas de gerenciamento de versão para controle de projetos.</HabilitiesDescription>
+              </HabilitiesWrapper>
+            </HabilitiesContainer>
+          </ProfileSecondWrapper>
         </ProfileSecondContainer>
 
         <ProjectSectionContainer id="projetos-id">
