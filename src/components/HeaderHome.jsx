@@ -108,10 +108,13 @@ export default function HeaderHome() {
                 <HeaderLinksFixed href="#sobre">Sobre</HeaderLinksFixed>
               </HeaderLIFixed>
               <HeaderLIFixed>
+                <HeaderLinksFixed href="#habilidades">Habilidades</HeaderLinksFixed>
+              </HeaderLIFixed>
+              <HeaderLIFixed>
                 <HeaderLinksFixed href="#projetos-id">Projetos</HeaderLinksFixed>
               </HeaderLIFixed>
               <HeaderLIFixed>
-                <HeaderLinksFixed href="#fale-comigo">Fale comigo</HeaderLinksFixed>
+                <HeaderLinksFixed href="#fale-comigo">Contato</HeaderLinksFixed>
               </HeaderLIFixed>
             </HeaderULFixed>
           </HeaderNavbarFixed>
@@ -127,10 +130,13 @@ export default function HeaderHome() {
                 <HeaderLinks href="#sobre">Sobre</HeaderLinks>
               </HeaderLI>
               <HeaderLI>
+                <HeaderLinks href="#habilidades">Habilidades</HeaderLinks>
+              </HeaderLI>
+              <HeaderLI>
                 <HeaderLinks href="#projetos-id">Projetos</HeaderLinks>
               </HeaderLI>
               <HeaderLI>
-                <HeaderLinks href="#fale-comigo">Fale comigo</HeaderLinks>
+                <HeaderLinks href="#fale-comigo">Contato</HeaderLinks>
               </HeaderLI>
             </HeaderUL>
           </HeaderNavbar>
