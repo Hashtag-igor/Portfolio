@@ -38,6 +38,14 @@ export const HomeInfoContainer = styled.div`
         height: 30vh;
     }
 
+    @media screen and (max-width: 800px) {
+        height: 40vh;
+    }
+
+    @media screen and (max-width: 700px) {
+        height: 36vh;
+    }
+
     @media screen and (max-width: 500px) {
         height: 86vh;
     }

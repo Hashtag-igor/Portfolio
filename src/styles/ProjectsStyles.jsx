@@ -82,26 +82,30 @@ export const ProjectsMapImagesTitle = styled.h2`
 export const ProjectTitle = styled.h1`
     text-align: center;
     font-size: 70px;
+    margin-bottom: 15px;
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 900px) {
+        font-size: 60px;
+    }
+
+    @media screen and (max-width: 750px) {
+        font-size: 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 500px) {
         font-size: 35px;
     }
 `
 export const ProjectIMG = styled.img`
-    height: 120px;
-    width: 160px;
+    height: 130px;
+    width: 150px;
     display: flex;
     justify-content: center;
     margin: auto;
-
-    @media screen and (max-width: 1024px) {
-        height: 120px;
-        width: 140px;
-    }
-
-    @media screen and (max-width: 360px) {
-        /* margin: 25px 0; */
-    }
 `
 
 
@@ -142,10 +146,12 @@ export const ProjectSectionTitle = styled.h2`
 
     @media screen and (max-width: 600px) {
         font-size: 52px;
+        padding-top: 40px;
     }
 
     @media screen and (max-width: 500px) {
         font-size: 44px;
+        padding-top: 30px;
     }
 
     @media screen and (max-width: 400px) {
