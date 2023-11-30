@@ -6,7 +6,7 @@ export const HeaderNavbarPages = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 0 20px 70px;
+  padding: 25px 70px 20px 70px;
 
   @media screen and (max-width: 1300px) {
     padding: 25px 0 20px 60px;
@@ -268,6 +268,16 @@ export const PaginaOverlayMobile = styled.div`
       background-color: #fff;
     }
   }
+
+  @media (orientation: landscape) {
+    @media screen and (max-width: 768px) {
+      z-index: 1;
+
+      &.pagina-overlay-aberto {
+        height: 400vh;
+      }
+    }
+  }
 `;
 
 export const PaginaConteudoMobileContainer = styled.div`
@@ -301,13 +311,20 @@ export const PaginaConteudoMobileWrapper = styled.div`
   @media screen and (max-width: 340px) {
     gap: 24px 0;
   }
+
+  @media (orientation: landscape) {
+    @media screen and (max-width: 768px) {
+      gap: 18px 0;
+    }
+  }
 `
 
 export const PaginaConteudoMobileTitle = styled(Link)`
   margin-bottom: 30px; 
   font-size: 52px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #191919;
+  color: #f9004d;
+  text-shadow: 1px 2px 1px rgb(0, 0, 0);
   font-weight: bolder;
 
   @media screen and (max-width: 500px) {
@@ -317,12 +334,13 @@ export const PaginaConteudoMobileTitle = styled(Link)`
   @media screen and (max-width: 340px) {
     margin-bottom: 15px;
   }
+
 `
 
 export const PaginaConteudoMobileSubTitle = styled.h2`
   font-size: 34px; 
   color: #191919;
-  margin-Top: 40px;
+  margin-top: 40px;
 
   @media screen and (max-width: 500px) {
     font-size: 28px;
@@ -335,6 +353,12 @@ export const PaginaConteudoMobileSubTitle = styled.h2`
   @media screen and (max-width: 340px) {
     margin-top: 15px;
     font-size: 28px;
+  }
+
+  @media (orientation: landscape) {
+    @media screen and (max-width: 768px) {
+      margin-top: 12px;
+    }
   }
 `
 

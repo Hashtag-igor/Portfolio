@@ -154,6 +154,7 @@ export default function HeaderHome() {
                   <PaginaConteudoMobileSubTitle>Contato</PaginaConteudoMobileSubTitle>
                   <HeaderLinksMobilePage to="https://github.com/Hashtag-igor" target="_blank">Github</HeaderLinksMobilePage>
                   <HeaderLinksMobilePage to="https://www.linkedin.com/in/igor-perdigao-silva" target="_blank">Linkedin</HeaderLinksMobilePage>
+                  <HeaderLinksMobilePage to="https://api.whatsapp.com/send/?phone=5531998023935&text&type=phone_number&app_absent=0" target="_blank">Whatsapp</HeaderLinksMobilePage>
                 </PaginaConteudoMobileWrapper>
               </PaginaConteudoMobileContainer>
             </PaginaOverlayMobile>
