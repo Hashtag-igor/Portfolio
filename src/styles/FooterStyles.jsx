@@ -6,28 +6,48 @@ import { Link } from "react-router-dom"
 
 export const LinkedinIcon = styled(BsLinkedin)`
     font-size: 30px;
-    cursor: pointer;
     color: #000;
+
+    &:hover {
+        color: #4040f7;
+        cursor: pointer; 
+    }
 `
 export const GithubIcon = styled(BsGithub)` 
     font-size: 30px;
-    cursor: pointer;
     color: #000;
+
+    &:hover {
+        color: #494949;
+        cursor: pointer; 
+    }
 `
 export const InstagramIcon = styled(FaInstagram)`
     font-size: 30px;
-    cursor: pointer;
     color: #000;
+
+    &:hover {
+        color: #e9004e;
+        cursor: pointer; 
+    }    
 `
 export const WhatsappIcon = styled(FaWhatsapp)`
     font-size: 30px;
-    cursor: pointer;
     color: #000;
+
+    &:hover {
+        color: #077907;
+        cursor: pointer; 
+    }
 `
 
 export const FooterContainer = styled.div`
     background: #fff; 
     padding: 80px 0 20px 0;
+
+    @media screen and (max-width: 400px) {
+        padding: 110px 0 30px 0;
+    }
 `
 export const FooterProfileContainer = styled.div`
     text-align: center; 
