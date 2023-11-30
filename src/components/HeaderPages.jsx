@@ -1,7 +1,7 @@
 import  { useState, useEffect } from 'react'
 
 import { HeaderContainer, HeaderLogoLeft, HeaderLogoRight, HeaderNavbarFixedPages, HeaderLogoLeftFixedPages, HeaderContainerFixed, 
-         HeaderLogoRightFixed, HeaderNavbarPages } from "../styles/HeaderStyles"
+         HeaderLogoRightFixed, HeaderNavbarPages, HeaderLinksFixedPages } from "../styles/HeaderStyles"
 
 export default function HeaderPages() {
   const [headerState, setHeaderState] = useState('normal');
@@ -64,6 +64,9 @@ export default function HeaderPages() {
             <HeaderLogoLeftFixedPages onClick={handleLogoClick}>
               Portfó<HeaderLogoRightFixed>lio</HeaderLogoRightFixed>
             </HeaderLogoLeftFixedPages>
+            <div>
+              <HeaderLinksFixedPages to="/allprojects">Ver todos</HeaderLinksFixedPages>
+            </div>
           </HeaderNavbarFixedPages>
         </HeaderContainerFixed>
       ) : (
@@ -72,6 +75,9 @@ export default function HeaderPages() {
             <HeaderLogoLeft to="/" onClick={handleLogoClick}>
               Portfó<HeaderLogoRight>lio</HeaderLogoRight>
             </HeaderLogoLeft>
+            <div>
+              <HeaderLinksFixedPages to="/allprojects">Ver todos</HeaderLinksFixedPages>
+            </div>
           </HeaderNavbarPages>
       </HeaderContainer>
       )}

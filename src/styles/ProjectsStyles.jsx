@@ -3,7 +3,9 @@ import styled from "styled-components";
 import { Link } from "react-router-dom"
 
 export const ProjectsContainer = styled.div`
-    margin: 30px 0 100px 0;
+    margin:  0;
+    background-color: #FAF6F0;
+    padding: 40px 0 80px 0;
 `
 export const ProjectsWrapper = styled.div`
     width: 90%;
@@ -11,7 +13,7 @@ export const ProjectsWrapper = styled.div`
 `
 export const ProjectsTitle = styled.h1`
     text-align: center;
-    font-size: 40px;
+    font-size: 10px;
     margin-bottom: 50px;
 
     @media screen and (max-width: 420px) {
@@ -79,28 +81,31 @@ export const ProjectsMapImagesTitle = styled.h2`
 `
 export const ProjectTitle = styled.h1`
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 70px;
+    margin-bottom: 15px;
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 900px) {
+        font-size: 60px;
+    }
+
+    @media screen and (max-width: 750px) {
+        font-size: 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 500px) {
         font-size: 35px;
     }
 `
 export const ProjectIMG = styled.img`
-    height: 120px;
-    width: 160px;
+    height: 130px;
+    width: 150px;
     display: flex;
     justify-content: center;
     margin: auto;
-
-    @media screen and (max-width: 1024px) {
-        height: 120px;
-        width: 140px;
-    }
-
-    @media screen and (max-width: 360px) {
-        /* margin: 25px 0; */
-    }
 `
 
 
@@ -131,7 +136,7 @@ export const AllProjectsMapContainer = styled.div`
 `
 export const ProjectSectionTitle = styled.h2`
     color: white;
-    font-size: 75px;
+    font-size: 70px;
     text-align: center;
     padding-top: 30px;
 
@@ -141,10 +146,12 @@ export const ProjectSectionTitle = styled.h2`
 
     @media screen and (max-width: 600px) {
         font-size: 52px;
+        padding-top: 40px;
     }
 
     @media screen and (max-width: 500px) {
         font-size: 44px;
+        padding-top: 30px;
     }
 
     @media screen and (max-width: 400px) {
