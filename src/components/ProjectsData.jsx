@@ -24,7 +24,7 @@ const projectsData = [
       img: financialSystem,
       alt: "Projeto Financial System",
       name: "Financial System",
-      description: "O Projeto está em desenvolvimento.. Em breve estará disponivel.",
+      description: "Estou trabalhando no desenvolvimento de um sistema financeiro que permite aos usuários criar contas, fazer login e acessar suas finanças mensais. O projeto inclui autenticação segura, visão abrangente das finanças atuais e arquivamento de meses anteriores. Utilizo Node.js, React, MongoDB e TypeScript para garantir uma implementação segura e eficaz. O objetivo é proporcionar aos usuários uma ferramenta para gerenciar suas finanças pessoais.",
       link: "/financialsystem"
     },
     {
