@@ -573,15 +573,25 @@ export const ProjectSectionTitle = styled.h2`
 export const ProjectCardContainer = styled.div`
     display: flex;
     justify-content: space-around;
-    margin-top: 60px;
+    flex-wrap: wrap; 
+    width: 95%;
+    margin: 50px auto 60px auto;
 
     @media screen and (max-width: 1024px) {
         flex-direction: column;
         width: 100%;
     }
 
+    @media screen and (max-width: 767px) {
+        width: 95%;
+    }
+
     @media screen and (max-width: 400px) {
-        margin-top: 40px;
+        width: 92%;
+    }
+
+    @media screen and (max-width: 360px) {
+        width: 90%;
     }
 `
 export const ProjectCardWrapper = styled.div`
@@ -605,22 +615,24 @@ export const ProjectCardWrapper = styled.div`
 
     @media screen and (max-width: 600px) {
         height: 680px;
+        width: 90%;
     }
 
     @media screen and (max-width: 500px) {
-        height: 760px;
+        height: 790px;
         width: 95%;
+        margin: 0 auto 30px auto;
     }
 
     @media screen and (max-width: 400px) {
         height: 800px;
-        /* width: 100%; */
+        width: 100%;
+        padding: 20px 20px;
     }
 
     @media screen and (max-width: 360px) {
-        height: 800px;
-        width: 100%;
-        padding: 30px 0;
+        height: 860px;
+        padding: 20px 0;
     }
 `
 export const ProjectCardIMG = styled.img`
