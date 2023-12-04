@@ -115,11 +115,27 @@ export const AllProjectsContainer = styled.div`
     width: 100%;
 `
 export const AllProjectsWrapper = styled.div`
-    width: 90%;
-    margin: auto;
+    width: 95%;
+    margin: 50px auto 60px auto;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 95%;
+    }
+
+    @media screen and (max-width: 400px) {
+        width: 92%;
+    }
+
+    @media screen and (max-width: 360px) {
+        width: 90%;
+    }
 `
 export const AllProjectsMapContainer = styled.div`
-
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -127,7 +143,6 @@ export const AllProjectsMapContainer = styled.div`
 
     @media screen and (max-width: 1024px) {
         flex-direction: column;
-        width: 100%;
     }
 
     @media screen and (max-width: 400px) {
