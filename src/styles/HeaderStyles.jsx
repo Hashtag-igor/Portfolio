@@ -9,11 +9,11 @@ export const HeaderNavbarPages = styled.nav`
   padding: 25px 70px 20px 70px;
 
   @media screen and (max-width: 1300px) {
-    padding: 25px 0 20px 60px;
+    padding: 25px 60px 20px 60px;
   }
 
   @media screen and (max-width: 1100px) {
-    padding: 25px 0 20px 50px;
+    padding: 25px 50px 20px 50px;
   }
 
   @media screen and (max-width: 800px) {
