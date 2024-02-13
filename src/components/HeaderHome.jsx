@@ -108,10 +108,13 @@ export default function HeaderHome() {
                 <HeaderLinksFixed href="#sobre">Sobre</HeaderLinksFixed>
               </HeaderLIFixed>
               <HeaderLIFixed>
+                <HeaderLinksFixed href="#habilidades">Habilidades</HeaderLinksFixed>
+              </HeaderLIFixed>
+              <HeaderLIFixed>
                 <HeaderLinksFixed href="#projetos-id">Projetos</HeaderLinksFixed>
               </HeaderLIFixed>
               <HeaderLIFixed>
-                <HeaderLinksFixed href="#fale-comigo">Fale comigo</HeaderLinksFixed>
+                <HeaderLinksFixed href="#fale-comigo">Contato</HeaderLinksFixed>
               </HeaderLIFixed>
             </HeaderULFixed>
           </HeaderNavbarFixed>
@@ -127,10 +130,13 @@ export default function HeaderHome() {
                 <HeaderLinks href="#sobre">Sobre</HeaderLinks>
               </HeaderLI>
               <HeaderLI>
+                <HeaderLinks href="#habilidades">Habilidades</HeaderLinks>
+              </HeaderLI>
+              <HeaderLI>
                 <HeaderLinks href="#projetos-id">Projetos</HeaderLinks>
               </HeaderLI>
               <HeaderLI>
-                <HeaderLinks href="#fale-comigo">Fale comigo</HeaderLinks>
+                <HeaderLinks href="#fale-comigo">Contato</HeaderLinks>
               </HeaderLI>
             </HeaderUL>
           </HeaderNavbar>
@@ -148,6 +154,7 @@ export default function HeaderHome() {
                   <PaginaConteudoMobileSubTitle>Contato</PaginaConteudoMobileSubTitle>
                   <HeaderLinksMobilePage to="https://github.com/Hashtag-igor" target="_blank">Github</HeaderLinksMobilePage>
                   <HeaderLinksMobilePage to="https://www.linkedin.com/in/igor-perdigao-silva" target="_blank">Linkedin</HeaderLinksMobilePage>
+                  <HeaderLinksMobilePage to="https://api.whatsapp.com/send/?phone=5531998023935&text&type=phone_number&app_absent=0" target="_blank">Whatsapp</HeaderLinksMobilePage>
                 </PaginaConteudoMobileWrapper>
               </PaginaConteudoMobileContainer>
             </PaginaOverlayMobile>

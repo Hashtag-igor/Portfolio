@@ -5,15 +5,15 @@ import styled from "styled-components";
 export const HeaderNavbarPages = styled.nav`
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 25px 0 20px 70px;
+  justify-content: space-between;
+  padding: 25px 70px 20px 70px;
 
   @media screen and (max-width: 1300px) {
-    padding: 25px 0 20px 60px;
+    padding: 25px 60px 20px 60px;
   }
 
   @media screen and (max-width: 1100px) {
-    padding: 25px 0 20px 50px;
+    padding: 25px 50px 20px 50px;
   }
 
   @media screen and (max-width: 800px) {
@@ -30,8 +30,9 @@ export const HeaderNavbarPages = styled.nav`
 `
 export const HeaderNavbarFixedPages = styled.nav`
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 25px 50px;
 
@@ -52,6 +53,15 @@ export const HeaderLogoLeftFixedPages = styled(Link)`
   font-size: 40px;
   font-weight: 500;
 `
+export const HeaderLinksFixedPages = styled(Link)`
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
+  }
+`
 
 
 
@@ -66,16 +76,23 @@ export const HeaderNavbar = styled.nav`
   padding: 25px 30px;
 `
 export const HeaderLogoLeft = styled(Link)`
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: 500;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 500;
+
+  @media screen and (max-width: 770px) {
+    margin-right: 20px;
+  }
 `
 export const HeaderLogoRight = styled.a`
     color: #f9004d;
 `
 export const HeaderUL = styled.ul`
+  display: flex;
+  justify-content: space-between;
+
     @media screen and (max-width: 700px) {
-        display: none;
+      display: none;
     }
 `
 
@@ -88,7 +105,7 @@ export const HeaderLI = styled.li`
     cursor: pointer;
 
     &:hover {
-        color: #f9004d;
+      color: #f9004d;
     }
 `
 export const HeaderLinks = styled.a`
@@ -114,6 +131,10 @@ export const HeaderNavbarFixed = styled.nav`
     align-items: center;
     width: 95%;
     margin: auto;
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
 `
 export const HeaderLogoLeftFixed = styled(Link)`
   color: #ffffff;
@@ -121,20 +142,34 @@ export const HeaderLogoLeftFixed = styled(Link)`
   font-weight: 500;
   flex: 1;
 
-  @media screen and (max-width: 580px) {
-    font-size: 30px;
-  }
-
-  @media screen and (max-width: 400px) {
-    font-size: 20px;
+  @media screen and (max-width: 700px) {
+    font-size: 28px;
+    margin: 0 20px 0 20px;
     flex: 0;
-    margin-right: 25px;
   }
 
-  @media screen and (max-width: 350px) {
-    font-size: 20px;
-    width: 100px;
-    margin-right: 15px;
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 580px) {
+    margin: 0 10px 0 13px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 420px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 370px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 340px) {
+    margin: 0 6px 0 5px;
   }
 `
 export const HeaderLogoRightFixed = styled.a`
@@ -178,7 +213,25 @@ export const HeaderLIFixed = styled.li`
     }
 `
 export const HeaderLinksFixed = styled.a`
+  @media screen and (max-width: 700px) {
+    font-size: 20px;
+  }
 
+  @media screen and (max-width: 580px) {
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 420px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 370px) {
+    font-size: 14px;
+  }
 `
 export const HeaderProfileInfoFixed = styled.div`
 
@@ -215,6 +268,16 @@ export const PaginaOverlayMobile = styled.div`
       background-color: #fff;
     }
   }
+
+  @media (orientation: landscape) {
+    @media screen and (max-width: 768px) {
+      z-index: 1;
+
+      &.pagina-overlay-aberto {
+        height: 400vh;
+      }
+    }
+  }
 `;
 
 export const PaginaConteudoMobileContainer = styled.div`
@@ -248,13 +311,20 @@ export const PaginaConteudoMobileWrapper = styled.div`
   @media screen and (max-width: 340px) {
     gap: 24px 0;
   }
+
+  @media (orientation: landscape) {
+    @media screen and (max-width: 768px) {
+      gap: 18px 0;
+    }
+  }
 `
 
 export const PaginaConteudoMobileTitle = styled(Link)`
   margin-bottom: 30px; 
   font-size: 52px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #191919;
+  color: #f9004d;
+  text-shadow: 1px 2px 1px rgb(0, 0, 0);
   font-weight: bolder;
 
   @media screen and (max-width: 500px) {
@@ -264,12 +334,13 @@ export const PaginaConteudoMobileTitle = styled(Link)`
   @media screen and (max-width: 340px) {
     margin-bottom: 15px;
   }
+
 `
 
 export const PaginaConteudoMobileSubTitle = styled.h2`
   font-size: 34px; 
   color: #191919;
-  margin-Top: 40px;
+  margin-top: 40px;
 
   @media screen and (max-width: 500px) {
     font-size: 28px;
@@ -282,6 +353,12 @@ export const PaginaConteudoMobileSubTitle = styled.h2`
   @media screen and (max-width: 340px) {
     margin-top: 15px;
     font-size: 28px;
+  }
+
+  @media (orientation: landscape) {
+    @media screen and (max-width: 768px) {
+      margin-top: 12px;
+    }
   }
 `
 
